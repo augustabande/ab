@@ -18,28 +18,28 @@ import ContactMe from '../blocks/home/ContactMe';
 
 const Home = () => {
     useEffect(() => {
-        document.body.classList.add( 'home' );
-        document.body.classList.add( 'header-absolute-true' );
-        document.body.classList.add( 'header-fixed-true' );
-        document.body.classList.add( 'header-content-secondary-true' );
-        document.body.classList.add( 'header-fixed-content-primary' );
-        document.body.classList.add( 'aos-true' );
+        document.body.classList.add('home');
+        document.body.classList.add('header-absolute-true');
+        document.body.classList.add('header-fixed-true');
+        document.body.classList.add('header-content-secondary-true');
+        document.body.classList.add('header-fixed-content-primary');
+        document.body.classList.add('aos-true');
 
         return () => {
-            document.body.classList.remove( 'home' );
-            document.body.classList.remove( 'header-absolute-true' );
-            document.body.classList.remove( 'header-fixed-true' );
-            document.body.classList.remove( 'header-content-secondary-true' );
-            document.body.classList.remove( 'header-fixed-content-primary' );
-            document.body.classList.remove( 'aos-true' );
+            document.body.classList.remove('home');
+            document.body.classList.remove('header-absolute-true');
+            document.body.classList.remove('header-fixed-true');
+            document.body.classList.remove('header-content-secondary-true');
+            document.body.classList.remove('header-fixed-content-primary');
+            document.body.classList.remove('aos-true');
         }
-    },[]);
+    }, []);
 
     return (
         <Fragment>
             <MetaTags>
                 <meta charSet="UTF-8" />
-                <title>Home | Sely - Personal Resume vCard React JS Template</title>
+                <title>Home | Personal Resume vCard React JS Template</title>
 
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
