@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "The beauty of sunrise",
+        "link": "/blog-single-post",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium…",
+        "category": "Category",
+        "categoryLink": "/blog",
+        "delay": 200
+    },
+    {
+        "id": 2,
+        "title": "The beauty of sunrise",
+        "link": "/blog-single-post",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium…",
+        "category": "Category",
+        "categoryLink": "/blog",
+        "delay": 400
+    },
+    {
+        "id": 3,
+        "title": "The beauty of sunrise",
+        "link": "/blog-single-post",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium…",
+        "category": "Category",
+        "categoryLink": "/blog",
+        "delay": 600
+    },
+    {
+        "id": 4,
+        "title": "The beauty of sunrise",
+        "link": "/blog-single-post",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium…",
+        "category": "Category",
+        "categoryLink": "/blog",
+        "delay": 200
+    },
+    {
+        "id": 5,
+        "title": "The beauty of sunrise",
+        "link": "/blog-single-post",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium…",
+        "category": "Category",
+        "categoryLink": "/blog",
+        "delay": 400
+    },
+    {
+        "id": 6,
+        "title": "The beauty of sunrise",
+        "link": "/blog-single-post",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium…",
+        "category": "Category",
+        "categoryLink": "/blog",
+        "delay": 600
+    }
+]

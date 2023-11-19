@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "imgSrc": "assets/img/demo/11_img.png",
+        "alt": "Logo",
+        "delay": 200
+    },
+    {
+        "id": 2,
+        "imgSrc": "assets/img/demo/12_img.png",
+        "alt": "Logo",
+        "delay": 400
+    },
+    {
+        "id": 3,
+        "imgSrc": "assets/img/demo/13_img.png",
+        "alt": "Logo",
+        "delay": 600
+    },
+    {
+        "id": 4,
+        "imgSrc": "assets/img/demo/14_img.png",
+        "alt": "Logo",
+        "delay": 800
+    },
+    {
+        "id": 5,
+        "imgSrc": "assets/img/demo/15_img.png",
+        "alt": "Logo",
+        "delay": 1000
+    },
+    {
+        "id": 6,
+        "imgSrc": "assets/img/demo/11_img.png",
+        "alt": "Logo",
+        "delay": 1200
+    }
+]

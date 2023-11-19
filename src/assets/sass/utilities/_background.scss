@@ -1,0 +1,71 @@
+//=================================================
+// Background
+//=================================================
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.bg-dark {
+    h1, h2, h3, h4, h5, h6, a, p {
+        color: $body_text_tertiary_color;
+    }
+}
+
+.bg {
+    &-gray {
+        background-color: $gray;
+    }
+
+    &-gray-light {
+        background-color: $gray-light;
+    }
+
+    &-gray-dark {
+        background-color: $gray-dark;
+    }
+
+    &-white {
+        background-color: $white;
+    }
+
+    &-blue {
+        background-color: $blue;
+    }
+
+    &-indigo {
+        background-color: $indigo;
+    }
+
+    &-purple {
+        background-color: $purple;
+    }
+
+    &-pink {
+        background-color: $pink;
+    }
+
+    &-red {
+        background-color: $red;
+    }
+
+    &-orange {
+        background-color: $orange;
+    }
+
+    &-yellow {
+        background-color: $yellow;
+    }
+
+    &-green {
+        background-color: $green;
+    }
+
+    &-teal {
+        background-color: $teal;
+    }
+
+    &-cyan {
+        background-color: $cyan;
+    }
+}

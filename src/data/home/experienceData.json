@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "position": "Senior photo editor",
+        "company": "“Company”",
+        "city": "Los Angeles",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo",
+        "contract": "Full time",
+        "time": "2015-2016",
+        "delay": 200
+    },
+    {
+        "id": 2,
+        "position": "Senior photo editor",
+        "company": "“Company”",
+        "city": "Los Angeles",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo",
+        "contract": "Full time",
+        "time": "2015-2016",
+        "delay": 400
+    },
+    {
+        "id": 3,
+        "position": "Senior photo editor",
+        "company": "“Company”",
+        "city": "Los Angeles",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo",
+        "contract": "Full time",
+        "time": "2015-2016",
+        "delay": 600
+    },
+    {
+        "id": 4,
+        "position": "Senior photo editor",
+        "company": "“Company”",
+        "city": "Los Angeles",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo",
+        "contract": "Full time",
+        "time": "2015-2016",
+        "delay": 800
+    }
+]

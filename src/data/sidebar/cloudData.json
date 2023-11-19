@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "Graphic",
+        "link": "/blog"
+    },
+    {
+        "id": 2,
+        "title": "Creative",
+        "link": "/blog"
+    },
+    {
+        "id": 3,
+        "title": "Design",
+        "link": "/blog"
+    } ,
+    {
+        "id": 4,
+        "title": "Photography",
+        "link": "/blog"
+    }
+]

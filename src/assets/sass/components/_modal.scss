@@ -1,0 +1,105 @@
+//=================================================
+// Modal
+//=================================================
+
+.modal {
+	background-color: $modal_background_color;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left top;
+	min-width: 320px;
+
+	.modal-dialog {
+		.modal-header {
+			.close {
+				&.btn {
+					padding: 0;
+					margin: 0 0 0 auto;
+					font-size: 1.263rem;
+				}
+			}
+		}
+	}
+}
+
+/*=============================
+// Modal size
+=============================*/
+.modal-full {
+    max-width: 100%;
+    margin: 0;
+}
+
+/*=============================
+// Modal header
+=============================*/
+.modal-header-top {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+
+/*=============================
+// Modal body
+=============================*/
+.modal-body-centered {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    padding: 0;
+
+    &::before {
+        content: "";
+        display: block;
+        height: 100vh;
+    }
+}
+
+/*=============================
+// Modal title
+=============================*/
+.modal-title {
+    margin-bottom: 0 !important;
+    @extend .after;
+}
+
+/*=============================
+// Modal menu
+=============================*/
+#menu-modal {
+    .modal-body {
+        > * {
+            padding-top: $header_padding_t + $header_padding_b + 0.789rem + 1.263rem;
+            padding-bottom: $header_padding_b + 0.789rem;
+			padding-right: 8.5%;
+        }
+
+		.modal-actions {
+			margin-bottom: 2rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+/*=============================
+// Modal search
+=============================*/
+#search-modal {
+    .modal-body {
+        form {
+			width: 100%;
+			max-width: 1250px;
+			padding-left: 5.263rem;
+			padding-right: 5.263rem;
+			margin: auto;
+
+			@media #{$media_md} {
+				padding-left: 2.632rem;
+				padding-right: 2.632rem;
+			}
+        }
+    }
+}

@@ -1,0 +1,62 @@
+//=================================================
+// Fonts
+//=================================================
+
+// Wok-Sans-Regular
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: url('../fonts/WorkSans/WorkSans-Regular/WorkSans-Regular.eot');
+    src: url('../fonts/WorkSans/WorkSans-Regular/WorkSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/WorkSans/WorkSans-Regular/WorkSans-Regular.woff2') format('woff2'),
+         url('../fonts/WorkSans/WorkSans-Regular/WorkSans-Regular.woff') format('woff'),
+         url('../fonts/WorkSans/WorkSans-Regular/WorkSans-Regular.ttf') format('truetype'),
+         url('../fonts/WorkSans/WorkSans-Regular/WorkSans-Regular.svg#WorkSans-Regular') format('svg');
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+// WorkSans-Bold
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: url('../fonts/WorkSans/WorkSans-Bold/WorkSans-Bold.eot');
+    src: url('../fonts/WorkSans/WorkSans-Bold/WorkSans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/WorkSans/WorkSans-Bold/WorkSans-Bold.woff2') format('woff2'),
+         url('../fonts/WorkSans/WorkSans-Bold/WorkSans-Bold.woff') format('woff'),
+         url('../fonts/WorkSans/WorkSans-Bold/WorkSans-Bold.ttf') format('truetype'),
+         url('../fonts/WorkSans/WorkSans-Bold/WorkSans-Bold.svg#WorkSans-Bold') format('svg');
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+// WorkSans-Light
+@font-face {
+    font-family: 'WorkSans-Light';
+    src: url('../fonts/WorkSans/WorkSans-Light/WorkSans-Light.eot');
+    src: url('../fonts/WorkSans/WorkSans-Light/WorkSans-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/WorkSans/WorkSans-Light/WorkSans-Light.woff2') format('woff2'),
+         url('../fonts/WorkSans/WorkSans-Light/WorkSans-Light.woff') format('woff'),
+         url('../fonts/WorkSans/WorkSans-Light/WorkSans-Light.ttf') format('truetype'),
+         url('../fonts/WorkSans/WorkSans-Light/WorkSans-Light.svg#WorkSans-Light') format('svg');
+    font-style: normal;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/*=============================
+// Font size
+=============================*/
+.font-size {
+    &-sm {
+        font-size: $f_size_sm;
+    }
+
+    &-df {
+        font-size: $f_size_df;
+    }
+
+    &-lg {
+        font-size: $f_size_lg;
+    }
+}

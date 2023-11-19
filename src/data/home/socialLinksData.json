@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Facebook",
+        "href": "https://www.facebook.com/adveits/",
+        "icon": "fab fa-facebook-f"
+    },
+    {
+        "id": 2,
+        "title": "LinkedIn",
+        "href": "https://www.linkedin.com/company/18135051/",
+        "icon": "fab fa-linkedin-in"
+    },
+    {
+        "id": 3,
+        "title": "Instagram",
+        "href": "https://www.instagram.com/adveits/",
+        "icon": "fab fa-instagram"
+    },
+    {
+        "id": 4,
+        "title": "Behance",
+        "href": "https://www.behance.net/adveits-store/projects",
+        "icon": "fab fa-behance"
+    }
+]

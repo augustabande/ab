@@ -1,0 +1,57 @@
+//=================================================
+// Card
+//=================================================
+
+.card {
+    .card-header {
+        padding: $card-spacer-y $card-spacer-x;
+        margin-bottom: 0 !important;
+        @extend .after;
+    }
+
+    .card-title {
+        @extend .after;
+        color: $body_headline_color;
+        margin-bottom: $space_sm - $h5_font_mb !important;
+
+        &:last-child {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .card-meta {
+        position: relative;
+        font-size: $f_size_df;
+        font-family: $font_primary_light;
+        font-weight: 300;
+        margin-bottom: $space_sm - $p_font_mb;
+
+        p {
+            font-size: $f_size_df;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: $body_text_primary_color;
+
+            &:hover {
+                color: $body_links_color;
+            }
+        }
+    }
+
+    .card-body {
+        padding: $card-spacer-y $card-spacer-x;
+    }
+
+    .card-footer {
+        padding: $card-spacer-y $card-spacer-x;
+    }
+
+    ul {
+        margin-bottom: 0 !important;
+    }
+}

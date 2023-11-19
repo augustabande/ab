@@ -1,0 +1,43 @@
+//=================================================
+// Blog
+//=================================================
+
+/*=============================
+// Card post
+=============================*/
+.card-post {
+    @extend .style-default;
+    background-color: $card_background_color;
+    border: 0;
+    height: 100%;
+
+    .img {
+        &.object-fit {
+            min-height: 21.053rem;
+            max-height: 21.053rem;
+
+            &:before {
+                padding-top: 75%;
+            }
+        }
+    }
+
+    .card-body {
+        padding: $card-spacer-y 0;
+        padding-bottom: 0;
+    }
+
+    &.sticky {
+        box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.09);
+
+        .card-body {
+            padding: $card_spacer_x;
+        }
+    }
+
+    &.no-thumbnail {
+        .card-body {
+            padding-top: 0;
+        }
+    }
+}

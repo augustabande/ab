@@ -1,0 +1,258 @@
+//=================================================
+// Header
+//=================================================
+
+$header_item_space: $space_md;
+
+.site-header {
+    background-color: $header_background_color;
+
+    .wrapper {
+        padding-top: $header_padding_t;
+        padding-bottom: $header_padding_b;
+    }
+
+    .header-content {
+        .header-left {
+            .d-flex {
+                > * {
+                    margin-right: $header_item_space;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        .header-right {
+            position: relative;
+            z-index: 3;
+
+            .d-flex {
+                > * {
+                    margin-right: $header_item_space;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        &.header-content-primary {
+            .header-actions {
+                margin-right: 0;
+
+                @media #{$media_md} {
+                    display: none;
+                }
+            }
+
+            .header-menu {
+                @media #{$media_md} {
+                    display: none;
+                }
+            }
+
+            .header-menu-toggle {
+                display: none;
+
+                @media #{$media_md} {
+                    display: block;
+                }
+            }
+        }
+
+        &.header-content-secondary {
+            .header-menu {
+                margin-right: 0;
+
+                @media #{$media_md} {
+                    display: none;
+                }
+            }
+
+            .header-toggle {
+                display: none;
+
+                @media #{$media_md} {
+                    display: block;
+                }
+
+                .header-menu-toggle {
+                    display: none;
+
+                    @media #{$media_md} {
+                        display: block;
+                    }
+                }
+
+                .header-search-toggle {
+                    display: none;
+
+                    @media #{$media_md} {
+                        display: block;
+                    }
+                }
+
+                > * {
+                    margin-right: $header_item_space;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-content-secondary {
+    display: none;
+}
+
+.header-content-secondary-true {
+    .header-content-secondary {
+        display: block;
+    }
+
+    .header-content-primary {
+        display: none;
+    }
+}
+
+.header-fixed-content-primary {
+    &.header-fixed {
+        header {
+            &.site-header {
+                .header-content-secondary {
+                    display: none;
+                }
+
+                .header-content-primary {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.modal-header {
+    .header-content {
+        .header-left {
+            .d-flex {
+                > * {
+                    margin-right: $header_item_space;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        .header-right {
+            .d-flex {
+                > * {
+                    margin-right: $header_item_space;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-absolute-true {
+    header {
+        &.site-header {
+            position: absolute;
+            width: 100%;
+            min-width: 320px;
+        }
+    }
+}
+
+.header-fixed-true {
+    &.header-fixed {
+        header {
+            &.site-header {
+                position: fixed;
+                z-index: 1040;
+
+                @media #{"(max-width: 600px)"} {
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+body {
+    &:not([class*='page-header-absolute-and-no-title-and-content-full-width']):not([class*='page-header-fixed-and-no-title-and-content-full-width']) {
+        &.header-absolute-true {
+            main {
+                padding-top: 0;
+
+                > .content {
+                    > .clearfix {
+                        padding-top: 7.5625rem;
+
+                        > section:first-child,
+                        > div:first-child,
+                        > header:first-child,
+                        > footer:first-child,
+                        > main:first-child,
+                        > article:first-child,
+                        > aside:first-child,
+                        > nav:first-child {
+                            > section:first-child,
+                            > div:first-child,
+                            > header:first-child,
+                            > footer:first-child,
+                            > main:first-child,
+                            > article:first-child,
+                            > aside:first-child,
+                            > nav:first-child {
+                                padding-top: 7.5625rem;
+                                margin-top: -7.5625rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+[class*='page-header-absolute-and-no-title-and-content-full-width'],
+[class*='page-header-fixed-and-no-title-and-content-full-width'] {
+    &.header-absolute-true {
+        main {
+            padding-top: 0;
+
+            > .content {
+                > .clearfix {
+                    padding-top: 7.5625rem;
+
+                    [class*='section-wrap'] {
+                        > section:first-child,
+                        > div:first-child,
+                        > header:first-child,
+                        > footer:first-child,
+                        > main:first-child,
+                        > article:first-child,
+                        > aside:first-child,
+                        > nav:first-child {
+                            padding-top: 7.5625rem;
+                            margin-top: -7.5625rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,330 @@
+//=================================================
+// Nav
+//=================================================
+
+.nav {
+	font-size: $f_size_df;
+	@extend .list-unstyled;
+
+	li {
+		margin-bottom: 0;
+	}
+
+	// Nav item
+	.nav-item {
+		font-family: $font_primary;
+		font-weight: 400;
+
+		> a:not(.disabled):not(.active) {
+			color: $menu_links_color;
+		}
+
+		// Hover
+		&:hover {
+			> a:not(.disabled):not(.active) {
+				color: $menu_links_hover_color;
+			}
+		}
+
+		// Has children
+		&.nav-item-has-children {
+			> a:not(.disabled) {
+				font-family: $font_primary_bold;
+				font-weight: 700;
+			}
+		}
+
+		// Active
+		&.current-nav-item, &.active {
+			> a:not(.disabled) {
+				font-family: $font_primary_bold;
+				font-weight: 700;
+				color: $menu_links_active_color;
+			}
+
+			> .dropdown-icon {
+				[class*='fa-'] {
+					color: $menu_links_hover_color;
+				}
+			}
+		}
+	}
+
+	// Nav link
+	&:not(.nav-pills) {
+		.nav-link {
+			font-family: $font_primary;
+			font-weight: 400;
+
+			&:not(.disabled) {
+				color: $menu_links_color;
+
+				&:hover {
+					color: $menu_links_hover_color;
+				}
+
+				&.active {
+					color: $menu_links_active_color;
+				}
+			}
+		}
+	}
+
+	// Nav pills
+	&.nav-pills {
+		.nav-link {
+			&:not(.disabled):not(.active):not(.is-active) {
+				color: $menu_links_color;
+
+				&:hover {
+					color: $nav-pills-link-active-color;
+					background-color: $nav-pills-link-active-bg;
+				}
+			}
+
+			&.active, &.is-active {
+				color: $nav-pills-link-active-color;
+				background-color: $nav-pills-link-active-bg;
+			}
+		}
+
+		.show {
+			.nav-link {
+				&:not(.disabled):not(.active):not(.is-active) {
+					color: $nav-pills-link-active-color;
+				}
+			}
+		}
+
+		li {
+			line-height: inherit;
+
+			&:before, &:after {
+				display: none;
+			}
+		}
+	}
+
+	// Nav tabs
+	&.nav-tabs {
+		li {
+			&:before, &:after {
+				display: none;
+			}
+		}
+	}
+}
+
+/*=============================
+// Menu primary at header
+=============================*/
+$header_item_space: $space_md;
+
+#header {
+	nav {
+		&.menu-primary {
+			margin-bottom: -$header_item_space / 2.5;
+			margin-right: -$header_item_space;
+
+			ul.nav {
+				li.nav-item {
+					padding-bottom: $header_item_space / 2.5;
+					margin-right: $header_item_space;
+
+					a {
+						opacity: 1;
+					}
+
+					> a {
+						position: relative;
+						color: $menu_links_color;
+					}
+
+					> .dropdown-custom-icon {
+						.dropdown-icon {
+							color: $menu_links_color;
+						}
+					}
+
+					&:hover {
+						> a {
+							color: $menu_links_hover_color;
+						}
+
+						> .dropdown-custom-icon {
+							.dropdown-icon {
+								color: $menu_links_hover_color;
+							}
+						}
+					}
+
+					&.current-nav-item, &.active, &.show {
+						> a {
+							color: $menu_links_active_color;
+						}
+
+						> .dropdown-custom-icon {
+							.dropdown-icon {
+								color: $menu_links_active_color;
+							}
+						}
+					}
+
+					// Dropdown
+					> .dropdown-custom-icon {
+						&:hover {
+							color: $menu_links_active_color;
+
+							.dropdown-icon {
+								color: $menu_links_active_color;
+							}
+						}
+
+						.dropdown-icon {
+							@extend .transition-all;
+						}
+					}
+
+					.dropdown-custom-icon {
+						margin-left: -0.3125rem;
+
+						.dropdown-icon {
+							font-size: 0.75rem;
+							padding-left: $header_item_space / 5;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*=============================
+// Menu primary at modal
+=============================*/
+$menu_primary_modal_fz: 2.894737rem;
+$menu_primary_modal_mb: 1.316rem;
+
+#menu-modal {
+	nav {
+		&.menu-primary {
+			ul.nav {
+				@extend .flex-column;
+
+				li.nav-item {
+					margin-top: $menu_primary_modal_mb / 2;
+					margin-bottom: $menu_primary_modal_mb / 2;
+					line-height: normal;
+					text-align: right;
+
+					&:before, &:after {
+						display: none;
+					}
+
+					a {
+						font-family: $font_primary_bold;
+						font-weight: 700;
+						opacity: 1;
+					}
+
+					> a {
+						color: $menu_links_color;
+						font-size: $menu_primary_modal_fz;
+						position: relative;
+					}
+
+					&:hover {
+						> a {
+							color: $menu_links_hover_color !important;
+						}
+
+						> .dropdown-custom-icon {
+							.dropdown-icon {
+								color: $menu_links_hover_color;
+							}
+						}
+					}
+
+					&.current-nav-item, &.active, &.show {
+						> a {
+							color: $menu_links_active_color;
+						}
+
+						> .dropdown-custom-icon {
+							.dropdown-icon {
+								color: $menu_links_active_color;
+							}
+						}
+					}
+
+					// Dropdown
+					> .dropdown-custom-icon {
+						color: $menu_links_color;
+						padding-left: $menu_primary_modal_mb / 1.35;
+						font-size: $menu_primary_modal_fz / 2.5;
+
+						&:hover {
+							color: $menu_links_hover_color;
+
+							.dropdown-icon {
+								color: $menu_links_hover_color;
+							}
+						}
+
+						.dropdown-icon {
+							@extend .transition-all;
+							padding-left: 0;
+						}
+					}
+
+					.dropdown-menu {
+						position: relative;
+						top: 0;
+						float: none;
+						padding-bottom: 0;
+						background-color: transparent;
+						margin-right: $menu_primary_modal_mb + 0.5rem;
+						border: 0;
+						padding-top: 0;
+						padding-bottom: 0;
+
+						li {
+							text-align: right;
+							width: 100%;
+							margin-bottom: $menu_primary_modal_mb / 2 !important;
+
+							&:first-child {
+								margin-top: $menu_primary_modal_mb / 2 !important;
+							}
+
+							&:last-child {
+								margin-bottom: 0 !important;
+							}
+
+							> .dropdown-custom-icon {
+								padding-left: $menu_primary_modal_mb / 1.75;
+								font-size: $menu_primary_modal_fz / 1.75;
+							}
+
+							.dropdown-icon {
+								position: static;
+								top: 0;
+								@include transform(translateY(0));
+								right: 0;
+							}
+
+							a {
+								font-size: $menu_primary_modal_fz / 1.35;
+							}
+
+							.dropdown-item {
+								padding: 0;
+								background-color: transparent;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

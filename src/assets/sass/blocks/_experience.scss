@@ -1,0 +1,56 @@
+//=================================================
+// Experience
+//=================================================
+
+.adv-slider-experience {
+    border-top: 1px solid $body_border_color;
+    padding-top: $space_sm;
+
+    .adv-swiper-container {
+        padding-bottom: 5.875rem;
+
+        .adv-2-swiper-button {
+            &-prev, &-next {
+                top: auto;
+                bottom: 0;
+                transform: translateY(0);
+
+                &.adv-swiper-button-disabled {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.adv-experience-pagination {
+    position: static;
+    padding-top: 0.625rem;
+    width: auto;
+}
+
+/*=============================
+// Card experience
+=============================*/
+.card-experience {
+    @extend .style-default;
+    border: 0;
+    height: 100%;
+
+    .card-title {
+        &:first-child {
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    .card-body {
+        padding: 0;
+
+        .badge {
+            min-width: 6rem;
+            font-size: 0.75rem;
+        }
+    }
+}

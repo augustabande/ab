@@ -1,0 +1,31 @@
+//=================================================
+// Colors
+//=================================================
+
+.text-white {
+	h1, h2, h3, h4, h5, h6 {
+		color: $white !important;
+	}
+
+	.btn {
+		&.btn-link {
+			color: $white;
+		}
+	}
+}
+
+[class*='-block-cover'] {
+	p {
+		&:not(.has-text-color) {
+			color: $white;
+
+			a {
+				color: $white;
+
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+}

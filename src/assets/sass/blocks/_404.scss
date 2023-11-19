@@ -1,0 +1,24 @@
+//=================================================
+// 404
+//=================================================
+
+.error404 {
+    #page-content {
+        .wrapper {
+            .form {
+                margin-top: $space_lg;
+            }
+
+            .button {
+                margin-top: $space_lg;
+            }
+        }
+    }
+
+    @media #{$media_md} {
+        .w-50 {
+            width: 100% !important;
+            max-width: 400px;
+        }
+    }
+}

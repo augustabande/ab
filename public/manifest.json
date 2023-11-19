@@ -1,0 +1,25 @@
+{
+    "short_name": "Sely React JS",
+    "name": "Sely - Personal Resume vCard React JS Template",
+    "icons": [
+        {
+            "src": "assets/img/favicon/favicon-16x16.ico",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "assets/img/logo/logo.svg",
+            "type": "image/svg",
+            "sizes": "50x39"
+        },
+        {
+            "src": "assets/img/logo/logo.svg",
+            "type": "image/svg",
+            "sizes": "141x42"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#767676",
+    "background_color": "#ffffff"
+}

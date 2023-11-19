@@ -1,0 +1,21 @@
+//=================================================
+// What I do
+//=================================================
+
+.what-i-do {
+    background-color: $body_main_element_secondary_color;
+    color: $body_text_secondary_color;
+
+    .what-i-do-content {
+        padding-top: 3.438rem;
+        padding-bottom: 4.063rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        i {
+            padding-bottom: $space_xs;
+            font-size: 2rem;
+        }
+    }
+}

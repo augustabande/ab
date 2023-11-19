@@ -1,0 +1,26 @@
+//=================================================
+// Social links
+//=================================================
+
+.social-links {
+	.social-links-items {
+		@extend .d-flex;
+		@extend .flex-wrap;
+		margin-left: 0;
+		margin-right: -1.563rem;
+		margin-bottom: -1.563rem;
+
+		.social-links-item {
+			margin-right: 1.563rem;
+			margin-bottom: 1.563rem;
+
+			&:before {
+				display: none;
+			}
+
+			i {
+				font-size: 1rem;
+			}
+		}
+	}
+}

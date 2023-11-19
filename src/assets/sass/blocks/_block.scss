@@ -1,0 +1,14 @@
+//=================================================
+// Block
+//=================================================
+
+:not(#page-title):not(#page-content) {
+	&.block {
+		.title {
+			h1, h2, h3, h4, h5, h6 {
+				padding-bottom: $space_lg;
+				margin-bottom: 0;
+			}
+		}
+	}
+}

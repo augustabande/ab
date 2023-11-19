@@ -1,0 +1,125 @@
+//=================================================
+// Comments
+//=================================================
+
+#comments {
+    .comment-list {
+        margin-top: $space_md;
+
+        .comment {
+            margin-top: $space_md;
+			padding: $space_sm;
+            margin-bottom: 0 !important;
+            background-color: $comment_background_color;
+        
+            &:before, &:after {
+                display: none;
+            }
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .comment-wrapper {
+                .comment-details {
+                    .comment-content {
+                        .comment-content-bottom {
+                            margin-top: $space_sm;
+                        }
+
+                        .comment-description {
+                            .quote {
+                                font-size: 1.25rem;
+                                margin-top: 0.125rem;
+                                margin-right: $space_xs;
+                                color: $body_text_secondary_color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .children {
+                margin-left: $space_md;
+
+                @media #{$media_xl} {
+                    margin-left: $space_md / 3.3 * 2;
+                }
+
+                @media #{$media_md} {
+                    margin-left: $space_md / 2;
+                }
+
+                .comment {
+                    margin-top: $space_md;
+                }
+
+                li {
+                    margin-top: $space_md;
+                }
+            }
+        }
+
+        #respond {
+            margin-top: $space_md;
+            margin-bottom: $space_md;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    // Comment respond
+    #respond {
+        .comment-reply-title {
+            color: $body_headline_color;
+            margin-bottom: $space_md;
+
+            small {
+                &:before, &:after {
+                    display: none;
+                }
+            }
+        }
+
+        .comment-form {
+            max-width: 51.5625rem;
+
+            .comment-notes, .logged-in-as {
+                @include lhCrop-b(1.75, 0.75);
+                @include lhCrop-a(1.75, 0.75);
+            }
+            
+            .comment-form-cookies-consent {
+                label {
+                    font-size: $f_size_lg;
+                    font-family: $font_primary;
+                    font-weight: 400;
+                    color: $body_text_primary_color;
+                }
+            }
+            
+            .form-submit {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+[class*='block-latest-comments'] {
+    > [class*='block-latest-comments__comment'] {
+        margin-bottom: $space_pc_primary - $li_font_mb !important;
+
+        [class*='__comment-date'] {
+            line-height: 0.8;
+            margin-top: $space_pc_secondary / 2.5;
+            margin-bottom: $space_pc_secondary / 2 !important;
+        }
+
+        [class*='block-latest-comments__comment-avatar'] {
+            margin-top: 0.328rem;
+            margin-bottom: 0 !important;
+        }
+    }
+}

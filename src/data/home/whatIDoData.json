@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "icon": "fas fa-camera",
+        "description": "Photography",
+        "delay": 200
+    },
+    {
+        "id": 2,
+        "icon": "fas fa-hashtag",
+        "description": "Social Media",
+        "delay": 400
+    },
+    {
+        "id": 3,
+        "icon": "fas fa-shopping-cart",
+        "description": "Ecommerce",
+        "delay": 600
+    },
+    {
+        "id": 4,
+        "icon": "fas fa-pen-nib",
+        "description": "Design",
+        "delay": 800
+    }
+]

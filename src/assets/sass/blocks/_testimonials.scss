@@ -1,0 +1,70 @@
+//=================================================
+// Testimonials
+//=================================================
+
+.adv-slider-testimonials {
+    border-top: 1px solid $body_border_color;
+    padding-top: $space_sm;
+
+    .adv-swiper-container {
+        padding-bottom: 5.875rem;
+
+        .adv-2-swiper-button {
+            &-prev, &-next {
+                top: auto;
+                bottom: 0;
+                transform: translateY(0);
+
+                &.adv-swiper-button-disabled {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.adv-testimonials-pagination {
+    position: static;
+    padding-top: 0.625rem;
+    width: auto;
+}
+
+/*=============================
+// Card testimonials
+=============================*/
+.card-testimonials {
+    @extend .style-default;
+    border: 0;
+    height: 100%;
+
+    .card-title {
+        &:first-child {
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    .card-body {
+        padding: 0;
+
+        .card-content-left {
+            padding-right: $space_sm;
+        }
+
+        .card-text {
+            padding-top: $space_sm;
+        }
+
+        .card-img {
+            img {
+                width: 6.875rem;
+                border-radius: 50%;
+
+                @media #{$media_xl} {
+                    width: 5.625rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+//=================================================
+// Page title
+//=================================================
+
+.page-title-height {
+    background-color: $page_title_background_color;
+    min-height: 19rem;
+
+    .title {
+        max-width: 51.563rem;
+    }
+}
+
+.page-title-content {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+.page-title-img {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    margin-top: -7.895rem;
+    height: calc(100% + 7.895rem);
+    width: calc((30% - 2.1875rem) - (-50vw + 50%));
+
+    @media #{$media_xl} {
+        width: calc((30% - 1.3125rem) - (-50vw + 50%));
+    }
+
+    @media #{$media_md} {
+        display: none;
+    }
+}

@@ -1,0 +1,49 @@
+//=================================================
+// My information
+//=================================================
+
+.my-information {
+	@extend .style-default;
+
+	.my-information-items {
+		@extend .d-flex;
+		@extend .flex-wrap;
+		@extend .justify-content-between;
+		border-top: 1px solid $body_border_color;
+		padding-top: $space_sm;
+		margin-bottom: -$space_sm;
+
+		@media #{$media_xl} {
+			-ms-flex-pack: start !important;
+			justify-content: flex-start !important;
+		}
+
+		.my-information-item {
+			padding-right: $space_sm;
+			padding-bottom: $space_sm;
+
+			&:last-child {
+				padding-right: 0;
+			}
+
+			@media #{$media_xl} {
+				flex: 0 0 33.33%;
+				max-width: 33.33%;
+			}
+
+			@media #{$media_md} {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+
+			.my-information-item-title {
+				color: $body_headline_color;
+				margin-bottom: $space_xs;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
