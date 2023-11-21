@@ -5,7 +5,7 @@ import ExperienceData from '../../data/home/experienceData.json';
 
 const Experience = () => {
     useEffect(() => {
-        new Swiper( '.adv-slider-experience .adv-swiper-container', {
+        new Swiper('.adv-slider-experience .adv-swiper-container', {
             // ADV swiper
             noSwipingClass: 'adv-swiper-no-swiping',
             containerModifierClass: 'adv-swiper-container-',
@@ -34,21 +34,21 @@ const Experience = () => {
                 el: '.adv-experience-pagination.adv-swiper-pagination',
                 clickable: true,
                 type: 'fraction',
-                formatFractionCurrent: function( number ) {
-                    if ( number < 10 ) {
+                formatFractionCurrent: function (number) {
+                    if (number < 10) {
                         number = '0' + number;
                     }
 
                     return number;
                 },
-                formatFractionTotal: function( number ) {
-                    if ( number < 10 ) {
+                formatFractionTotal: function (number) {
+                    if (number < 10) {
                         number = '0' + number;
                     }
 
                     return number;
                 },
-                renderFraction: function( currentClass, totalClass ) {
+                renderFraction: function (currentClass, totalClass) {
                     return '<span class="' + currentClass + '"></span>/<span class="' + totalClass + '"></span>';
                 }
             },
@@ -67,8 +67,8 @@ const Experience = () => {
                     slidesPerView: 3
                 },
             }
-        } );
-    },[]);
+        });
+    }, []);
 
     return (
         <section id="experience" className="block spacer p-top-xl p-bottom-xl-2">
@@ -84,27 +84,27 @@ const Experience = () => {
                 <div className="adv-slider-experience" data-aos="fade-up">
                     <div className="adv-swiper-container">
                         <div className="adv-swiper-wrapper experience-items">
-                            { ExperienceData && ExperienceData.map( ( item, key ) => {
+                            {ExperienceData && ExperienceData.map((item, key) => {
                                 return (
-                                    <div key={ key } className="adv-swiper-slide experience-item" data-aos="zoom-in" data-aos-delay={ item.delay }>
+                                    <div key={key} className="adv-swiper-slide experience-item" data-aos="zoom-in" data-aos-delay={item.delay}>
                                         <div className="card card-experience">
                                             <div className="card-body">
-                                                <div className="badge badge-secondary spacer m-bottom-sm">{ item.contract }</div>
-        
-                                                <h5 className="card-title">{ item.position }</h5>
-        
+                                                <div className="badge badge-secondary spacer m-bottom-sm">{item.contract}</div>
+
+                                                <h5 className="card-title">{item.position}</h5>
+
                                                 <div className="card-meta">
                                                     <p>
-                                                        <span>{ item.company }</span>
-                                                        <span>-</span>
-                                                        <span>{ item.city }</span>
-                                                        <span>-</span>
-                                                        <span>{ item.time }</span>
+                                                        <span>{item.company}, </span>
+                                                        {/*<span>-</span>*/}
+                                                        <span>{item.city}</span>
+                                                        <br></br>
+                                                        <span>{item.time}</span>
                                                     </p>
                                                 </div>
-        
+
                                                 <div className="card-text">
-                                                    <p>{ item.description }</p>
+                                                    <p>{item.description}</p>
                                                 </div>
                                             </div>
                                         </div>

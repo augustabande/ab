@@ -119,6 +119,7 @@
 // #8.24 Testimonials
 // #8.25 My information
 // #8.26 Social links
+// #8.27 Skills
 //
 // #9 Animate
 // #9.1 Animate.css
@@ -265,52 +266,52 @@
 // #3 Theme default style
 =================================================*/
 html {
-    -webkit-overflow-scrolling: touch;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 16px;
-    scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 16px;
+	scroll-behavior: smooth;
 
-    @media #{$media_xxl} {
-        font-size: 15px;
-    }
+	@media #{$media_xxl} {
+		font-size: 15px;
+	}
 
-    @media #{$media_xl} {
-        font-size: 14px;
-    }
+	@media #{$media_xl} {
+		font-size: 14px;
+	}
 
-    @media #{$media_sm} {
-        font-size: 12px;
-    }
+	@media #{$media_sm} {
+		font-size: 12px;
+	}
 }
 
 body {
-    background-color: $body_background_color;
-    font-size: 16px;
-    min-width: 320px;
+	background-color: $body_background_color;
+	font-size: 16px;
+	min-width: 320px;
 
-    @media #{$media_xxl} {
-        font-size: 15px;
-    }
+	@media #{$media_xxl} {
+		font-size: 15px;
+	}
 
-    @media #{$media_xl} {
-        font-size: 14px;
-    }
+	@media #{$media_xl} {
+		font-size: 14px;
+	}
 
-    @media #{$media_sm} {
-        font-size: 12px;
-    }
+	@media #{$media_sm} {
+		font-size: 12px;
+	}
 }
 
 ::selection {
-    background: $body_main_element_primary_color;
-    color: $white;
+	background: $body_main_element_primary_color;
+	color: $white;
 }
 
 .wrapper,
-body:not(.single)[class*='-full-width'] [class*='-section'] [class*='section-boxed'] > [class*='-container'] {
+body:not(.single)[class*='-full-width'] [class*='-section'] [class*='section-boxed']>[class*='-container'] {
 	max-width: $wrapper_max_w;
 	margin: auto;
 	padding-left: $wrapper_p_l;
@@ -347,12 +348,12 @@ body:not(.single)[class*='-full-width'] [class*='-section'] [class*='section-box
 
 	body:not(.single)[class*='-full-width'] {
 		#main {
-			[class*='-section'] [class*='section-boxed'] > [class*='-container'] {
+			[class*='-section'] [class*='section-boxed']>[class*='-container'] {
 				max-width: 450px;
 			}
 
 			.wrapper-normal {
-				[class*='-section'] [class*='section-boxed'] > [class*='-container'] {
+				[class*='-section'] [class*='section-boxed']>[class*='-container'] {
 					max-width: $wrapper_max_w;
 				}
 			}
@@ -649,6 +650,11 @@ body:not(.single)[class*='-full-width'] [class*='-section'] [class*='section-box
 // #8.26 Social links
 =============================*/
 @import "blocks/social-links";
+
+/*=============================
+// #8.27 Skills
+=============================*/
+@import "blocks/skills";
 
 /*=================================================
 // #9 Animate

@@ -1,42 +1,32 @@
 [
     {
         "id": 1,
-        "position": "Senior photo editor",
-        "company": "“Company”",
-        "city": "Los Angeles",
-        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo",
-        "contract": "Full time",
-        "time": "2015-2016",
+        "position": "Web developer",
+        "company": "Self employed",
+        "city": "full remote",
+        "description": "External consultant at the Joint Research Centre - European Commission. Directorate for Sustainable Resources, Food Security Unit – D5. Development and ongoing support for a new platform, following the guidelines and requirements set forth by Directorate-General for Agriculture and Rural Development.",
+        "contract": "Feelance",
+        "time": "2021-current",
         "delay": 200
     },
     {
         "id": 2,
-        "position": "Senior photo editor",
-        "company": "“Company”",
-        "city": "Los Angeles",
-        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo",
+        "position": "Front-end developer",
+        "company": "Fincons",
+        "city": "Italy",
+        "description": "External consultant at the Joint Research Centre - European Commission. Directorate for Sustainable Resources, Food Security Unit – D5. Contributed significantly to the development of dynamic interfaces for a diverse portfolio of web applications, including the FAS Database, LPIS Web Portal, GAEC Database, GEOGLAM Crop Monitor Partner Survey, and the ASAP Web Portal.",
         "contract": "Full time",
-        "time": "2015-2016",
+        "time": "2013-2021",
         "delay": 400
     },
     {
         "id": 3,
-        "position": "Senior photo editor",
-        "company": "“Company”",
-        "city": "Los Angeles",
-        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo",
+        "position": "Web designer",
+        "company": "JRC European Commission",
+        "city": "Italy",
+        "description": "During my traineeship, I took on the responsibility of developing design specifications for the GAEC web application, leveraging HTML, CSS, JavaScript, and jQuery. This encompassed an array of tasks: search engine optimization, maintenance of style sheets, development and implementation of an intuitive graphical user interface, and rigorous usability testing. My role was integral in creating an optimized, user-friendly interface and conducting comprehensive evaluations to ensure the highest level of usability.",
         "contract": "Full time",
-        "time": "2015-2016",
+        "time": "2012-2013",
         "delay": 600
-    },
-    {
-        "id": 4,
-        "position": "Senior photo editor",
-        "company": "“Company”",
-        "city": "Los Angeles",
-        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo",
-        "contract": "Full time",
-        "time": "2015-2016",
-        "delay": 800
     }
 ]

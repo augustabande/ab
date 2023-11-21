@@ -26,11 +26,12 @@ const AboutMe = () => {
                             </div>
 
                             <div className="sub-title spacer p-top-lg" data-aos="fade-up">
-                                <h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</h3>
+                                <h3>I'm a web developer and IT consultant with a passion for web design.
+                                </h3>
                             </div>
 
                             <div className="description spacer p-top-lg" data-aos="fade-up">
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.</p>
+                                <p>I enjoy developing simple, clean and slick websites that provide real value to the end user. I spent the last 10 years working as IT consultant for International and Governmental Organizations in the scientific field.</p>
                             </div>
                         </div>
                     </div>

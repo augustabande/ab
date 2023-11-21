@@ -5,7 +5,7 @@ import EducationData from '../../data/home/educationData.json';
 
 const Education = () => {
     useEffect(() => {
-        new Swiper( '.adv-slider-education .adv-swiper-container', {
+        new Swiper('.adv-slider-education .adv-swiper-container', {
             // ADV swiper
             noSwipingClass: 'adv-swiper-no-swiping',
             containerModifierClass: 'adv-swiper-container-',
@@ -34,21 +34,21 @@ const Education = () => {
                 el: '.adv-education-pagination.adv-swiper-pagination',
                 clickable: true,
                 type: 'fraction',
-                formatFractionCurrent: function( number ) {
-                    if ( number < 10 ) {
+                formatFractionCurrent: function (number) {
+                    if (number < 10) {
                         number = '0' + number;
                     }
 
                     return number;
                 },
-                formatFractionTotal: function( number ) {
-                    if ( number < 10 ) {
+                formatFractionTotal: function (number) {
+                    if (number < 10) {
                         number = '0' + number;
                     }
 
                     return number;
                 },
-                renderFraction: function( currentClass, totalClass ) {
+                renderFraction: function (currentClass, totalClass) {
                     return '<span class="' + currentClass + '"></span>/<span class="' + totalClass + '"></span>';
                 }
             },
@@ -67,8 +67,8 @@ const Education = () => {
                     slidesPerView: 3
                 },
             }
-        } );
-    },[]);
+        });
+    }, []);
 
     return (
         <section id="education" className="block spacer p-top-xl p-bottom-xl-2 bg-secondary">
@@ -84,25 +84,25 @@ const Education = () => {
                 <div className="adv-slider-education" data-aos="fade-up">
                     <div className="adv-swiper-container">
                         <div className="adv-swiper-wrapper education-items">
-                            { EducationData && EducationData.map( ( item, key ) => {
+                            {EducationData && EducationData.map((item, key) => {
                                 return (
-                                    <div key={ key } className="adv-swiper-slide education-item" data-aos="zoom-in" data-aos-delay={ item.delay }>
+                                    <div key={key} className="adv-swiper-slide education-item" data-aos="zoom-in" data-aos-delay={item.delay}>
                                         <div className="card card-education">
                                             <div className="card-body">
-                                                <h5 className="card-title">{ item.title }</h5>
-        
+                                                <h5 className="card-title">{item.title}</h5>
+
                                                 <div className="card-meta">
                                                     <p>
-                                                        <span>{ item.company }</span>
-                                                        <span>-</span>
-                                                        <span>{ item.city }</span>
-                                                        <span>-</span>
-                                                        <span>{ item.time }</span>
+                                                        <span>{item.company}, </span>
+                                                        {/*<span>-</span>*/}
+                                                        <span>{item.city}</span>
+                                                        <br></br>
+                                                        <span>{item.time}</span>
                                                     </p>
                                                 </div>
-        
+
                                                 <div className="card-text">
-                                                    <p>{ item.description }</p>
+                                                    <p>{item.description}</p>
                                                 </div>
                                             </div>
                                         </div>

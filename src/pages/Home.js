@@ -15,6 +15,7 @@ import Testimonials from '../blocks/home/Testimonials';
 import Clients from '../blocks/home/Clients';
 import Articles from '../blocks/home/Articles';
 import ContactMe from '../blocks/home/ContactMe';
+import Skills from '../blocks/home/Skills';
 
 const Home = () => {
     useEffect(() => {
@@ -67,6 +68,8 @@ const Home = () => {
                         <Experience />
 
                         <Education />
+
+                        <Skills />
 
                         <Portfolio />
 
