@@ -1,0 +1,42 @@
+[
+    {
+        "name": "HTML/HTML5",
+        "percent": 100
+    },
+    {
+        "name": "CSS/CSS3",
+        "percent": 100
+    },
+    {
+        "name": "JavaScript",
+        "percent": 90
+    },
+    {
+        "name": "JQuery",
+        "percent": 90
+    },
+    {
+        "name": "ReactJs",
+        "percent": 70
+    },
+    {
+        "name": "Angular",
+        "percent": 90
+    },
+    {
+        "name": "Bootstrap",
+        "percent": 95
+    },
+    {
+        "name": "Docker",
+        "percent": 70
+    },
+    {
+        "name": "PHP",
+        "percent": 70
+    },
+    {
+        "name": "WordPress",
+        "percent": 80
+    }
+]

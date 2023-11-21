@@ -3,7 +3,7 @@ import React from 'react';
 import ContactsForm from '../../components/form/ContactForm';
 
 const ContactMe = () => {
-    const backgrounImage = require( '../../assets/img/demo/18_img.png'); 
+    const backgrounImage = require('../../assets/img/demo/18_img.png');
 
     return (
         <section id="contact-me" className="block spacer p-top-xl">
@@ -27,19 +27,19 @@ const ContactMe = () => {
                                         <div className="contacts-information-item" data-aos="zoom-in" data-aos-delay="200">
                                             <h6 className="contacts-information-item-title">Address</h6>
 
-                                            <p className="contacts-information-item-description">London, United Kingdom</p>
+                                            <p className="contacts-information-item-description">Fuerteventura, Canary Islands (SPAIN)</p>
                                         </div>
 
                                         <div className="contacts-information-item" data-aos="zoom-in" data-aos-delay="400">
                                             <h6 className="contacts-information-item-title">Email</h6>
 
-                                            <p className="contacts-information-item-description"><a href="mailto:info@domain.com">info@domain.com</a></p>
+                                            <p className="contacts-information-item-description"><a href="mailto:augusta.bande@gmail.com">augusta.bande@gmail.com</a></p>
                                         </div>
 
                                         <div className="contacts-information-item" data-aos="zoom-in" data-aos-delay="600">
                                             <h6 className="contacts-information-item-title">Phone no.</h6>
 
-                                            <p className="contacts-information-item-description"><a href="tel:+43253312523">+432 533 12 523</a></p>
+                                            <p className="contacts-information-item-description"><a href="tel:+43253312523">+34 643 535 881</a></p>
                                         </div>
                                     </div>
                                 </div>

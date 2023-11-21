@@ -1,38 +1,38 @@
 [
     {
         "id": 1,
-        "title": "University of LA",
-        "company": "“Company”",
-        "city": "Los Angeles",
-        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo",
-        "time": "2015-2016",
+        "title": "Master’s degree in Modern Languages and Comparative Literatures",
+        "company": "University of Turin",
+        "city": "Italy",
+        "description": "I have a Master's degree in Modern Languages and Comparative Literatures, where I developed expertise in linguistic studies, literary analysis, and cross-cultural communication.",
+        "time": "2006/2009",
         "delay": 200
     },
     {
         "id": 2,
-        "title": "Web Design Courses",
-        "company": "“Company”",
-        "city": "Los Angeles",
-        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo",
-        "time": "2015-2016",
+        "title": "Bachelor degree in DAMS, Television and New Medias",
+        "company": "University of Turin",
+        "city": "Italy",
+        "description": "I hold a Bachelor's degree in Television and New Media from DAMS (Drama, Art, and Music Studies) at Turin University, where I gained in-depth knowledge of broadcasting, digital media production, and multimedia communication.",
+        "time": "2001/2005",
         "delay": 400
     },
     {
-        "id": 3,
-        "title": "Photography Courses",
-        "company": "“Company”",
-        "city": "Los Angeles",
-        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo",
-        "time": "2015-2016",
-        "delay": 600
+        "id": 4,
+        "title": "Angular - The Complete Guide",
+        "company": "Online certification",
+        "city": "online",
+        "description": "I've completed a comprehensive online training course on Angular, mastering key concepts such as TypeScript, modules, components, services, and directives. This hands-on course equipped me with the skills to build robust single-page applications, adhering to best coding practices and performance optimization techniques in Angular.",
+        "time": "2022",
+        "delay": 800
     },
     {
-        "id": 4,
-        "title": "Marketing Courses",
-        "company": "“Company”",
-        "city": "Los Angeles",
-        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo",
-        "time": "2015-2016",
-        "delay": 800
+        "id": 3,
+        "title": "React",
+        "company": "Online certification",
+        "city": "online",
+        "description": "I've completed an in-depth online training course on React, mastering core principles like JSX syntax, components, state and props management, lifecycle methods, and hooks, enabling me to build and optimize dynamic, interactive web applications.",
+        "time": "2009",
+        "delay": 600
     }
 ]

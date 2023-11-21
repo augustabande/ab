@@ -3,15 +3,15 @@ import React, { useEffect } from 'react';
 import SocialLinks from './SocialLinks';
 
 const PageTitle = () => {
-    const backgrounImage = require( '../../assets/img/placeholder/01_img.jpg');
+    const backgrounImage = require('../../assets/img/placeholder/01_img.jpg');
 
     useEffect(() => {
-        if ( document.querySelector('.page-title-img') ) {
+        if (document.querySelector('.page-title-img')) {
             document.querySelector('.site-main').classList.add('overflow-hidden');
         }
 
         return () => {
-            if ( document.querySelector('.site-main').classList.contains('overflow-hidden') ) {
+            if (document.querySelector('.site-main').classList.contains('overflow-hidden')) {
                 document.querySelector('.site-main').classList.remove('overflow-hidden');
             }
         }
@@ -24,11 +24,11 @@ const PageTitle = () => {
                     <div className="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                         <div className="page-title-content">
                             <div className="title" data-aos="fade-down">
-                                <h1 className="large">Hi. I’m Luca <br/>Rendez</h1>
+                                <h1 className="large">Hi. I’m Augusta </h1>
                             </div>
 
                             <div className="description spacer p-top-lg" data-aos="fade-up">
-                                <p>Photographer and Web Designer.</p>
+                                <p>Web developer and IT consultant.</p>
                             </div>
 
                             <div className="my-information spacer p-top-lg" data-aos="fade-up">
@@ -36,31 +36,31 @@ const PageTitle = () => {
                                     <div className="my-information-item" data-aos="zoom-in" data-aos-delay="200">
                                         <h6 className="my-information-item-title">Full Name</h6>
 
-                                        <p className="my-information-item-description">Luca Rendez</p>
+                                        <p className="my-information-item-description">Augusta Bande</p>
                                     </div>
 
                                     <div className="my-information-item" data-aos="zoom-in" data-aos-delay="400">
                                         <h6 className="my-information-item-title">Birth Date</h6>
 
-                                        <p className="my-information-item-description">1994-05-05</p>
+                                        <p className="my-information-item-description">1982-01-25</p>
                                     </div>
 
                                     <div className="my-information-item" data-aos="zoom-in" data-aos-delay="600">
                                         <h6 className="my-information-item-title">Address</h6>
 
-                                        <p className="my-information-item-description">London, United Kingdom</p>
+                                        <p className="my-information-item-description">Fuerteventura, Canary Islands </p>
                                     </div>
 
                                     <div className="my-information-item" data-aos="zoom-in" data-aos-delay="800">
                                         <h6 className="my-information-item-title">Email</h6>
 
-                                        <p className="my-information-item-description"><a href="mailto:info@domain.com">info@domain.com</a></p>
+                                        <p className="my-information-item-description"><a href="mailto:augusta.bande@gmail.com">augusta.bande@gmail.com</a></p>
                                     </div>
 
                                     <div className="my-information-item" data-aos="zoom-in" data-aos-delay="1000">
                                         <h6 className="my-information-item-title">Phone no.</h6>
 
-                                        <p className="my-information-item-description"><a href="tel:+43253312523">+432 533 12 523</a></p>
+                                        <p className="my-information-item-description"><a href="tel:+43253312523">+34 643 535 881</a></p>
                                     </div>
                                 </div>
                             </div>
