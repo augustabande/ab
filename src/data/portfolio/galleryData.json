@@ -1,50 +1,62 @@
 [
     {
-        "id": 6,
+        "id": 1,
         "title": "QUAP - QUality Assessment Platform",
         "category": "frontend",
         "link": "/portfolio-inside/projects/quap",
-        "imgSrc": "assets/img/projects/background-11.jpg",
+        "imgSrc": "assets/img/projects/background-7.jpg",
+        "role": "Front-end developer",
+        "technologies": "Angular, Rxjs, HTML, CSS",
         "description": "Focused on front-end development with Angular for the QUAP project, ensuring EU compliance, data handling, and responsive design."
     },
     {
-        "id": 3,
+        "id": 2,
         "title": "Bright Journey",
         "category": "consultancy",
         "link": "/portfolio-inside/projects/brightjourney",
         "imgSrc": "assets/img/projects/background-3.jpg",
+        "role": "IT consultant, Web developer",
+        "technologies": "WordPress, HTML, CSS, PHP",
         "description": "Provided IT consultancy and development support for 'Bright Journey' using WordPress, contributing to a user-centric website in the tourism industry."
     },
     {
-        "id": 1,
+        "id": 3,
         "title": "ASAP - Anomaly Hotspots of Agricultural Production",
         "category": "frontend",
         "link": "/portfolio-inside/projects/asap",
         "imgSrc": "assets/img/projects/background-1.jpg",
+        "role": "Front-end developer",
+        "technologies": "HTML, CSS, JavaScript/JQuery",
         "description": "Key Front-End Developer for the ASAP website, focused on user-centric features and compliance with European Commission guidelines. Utilized HTML5, CSS3, JavaScript, and ECL."
     },
     {
-        "id": 2,
+        "id": 4,
         "title": "Enjoy Trulli",
         "category": "fullstack",
         "link": "/portfolio-inside/projects/enjoytrulli",
         "imgSrc": "assets/img/projects/background-2.jpg",
+        "role": "Full stack developer",
+        "technologies": "WordPress, HTML, CSS, PHP",
         "description": "Developed a user-friendly website for an Italian B&B, integrating WordPress with a booking system. Technologies used include WordPress, HTML5, CSS3, JavaScript, and PHP."
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "PUREJOY",
         "category": "fullstack",
         "link": "/portfolio-inside/projects/purejoy",
         "imgSrc": "assets/img/projects/background-4.jpg",
+        "role": "Full stack developer",
+        "technologies": "WordPress, HTML, CSS, PHP",
         "description": "Created a personal travel blog on WordPress, sharing travelogues and photography, showcasing skills in UI/UX, audience engagement, and storytelling."
     },
     {
-        "id": 5,
-        "title": "LPIS QA / DECOMMISSIONED",
+        "id": 6,
+        "title": "LPIS QA / decommissioned",
         "category": "frontend",
         "link": "/portfolio-inside/projects/lpisqa",
         "imgSrc": "assets/img/projects/background-6.jpg",
+        "role": "Front-end developer",
+        "technologies": "HTML, CSS, JavaScript/JQuery",
         "description": "Served as a front-end developer for the LPIS project, focusing on user-friendly interfaces and performance using HTML5, CSS3, and JavaScript."
     }
 ]

@@ -73,8 +73,6 @@ const Home = () => {
 
                         <Portfolio />
 
-                        <Testimonials />
-
                         <Clients />
 
                         <ContactMe />

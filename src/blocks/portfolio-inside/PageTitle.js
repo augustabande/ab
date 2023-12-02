@@ -7,6 +7,8 @@ const PageTitle = () => {
                 <div className="d-flex justify-content-center">
                     <div className="title text-center" data-aos="fade-down">
                         <h1>Who in the world am I? Ah, that’s the great puzzle.</h1>
+
+                        texh here
                     </div>
                 </div>
             </div>
