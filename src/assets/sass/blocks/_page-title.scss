@@ -34,3 +34,17 @@
         display: none;
     }
 }
+
+.cursor {
+    display: inline-block;
+    margin-left: 2px;
+    background-color: black;
+    width: 1px;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}

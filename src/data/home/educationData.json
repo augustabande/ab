@@ -20,16 +20,16 @@
     {
         "id": 4,
         "title": "Angular - The Complete Guide",
-        "company": "Online certification",
+        "company": "Udemy",
         "city": "online",
         "description": "I've completed a comprehensive online training course on Angular, mastering key concepts such as TypeScript, modules, components, services, and directives. This hands-on course equipped me with the skills to build robust single-page applications, adhering to best coding practices and performance optimization techniques in Angular.",
-        "time": "2022",
+        "time": "2023",
         "delay": 800
     },
     {
         "id": 3,
-        "title": "React",
-        "company": "Online certification",
+        "title": " React and Redux toolkit",
+        "company": "Udemy",
         "city": "online",
         "description": "I've completed an in-depth online training course on React, mastering core principles like JSX syntax, components, state and props management, lifecycle methods, and hooks, enabling me to build and optimize dynamic, interactive web applications.",
         "time": "2009",

@@ -2,8 +2,8 @@ import React from 'react';
 import SkillsData from '../../data/home/skillsData.json';
 
 const Skills = () => {
-    return (
-        <section id="skills" className="block spacer p-top-xl">
+  return (
+    <section id="skills" className="block spacer p-top-xl">
       {/* My Skills */}
       <div className="wrapper">
         <div className="title" data-aos="fade-up">
@@ -28,7 +28,7 @@ const Skills = () => {
         </div>
       </div>
     </section>
-    );
+  );
 };
 
 export default Skills;
