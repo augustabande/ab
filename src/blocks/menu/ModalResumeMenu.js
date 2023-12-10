@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Collapse from 'react-bootstrap/Collapse';
 import { Link } from 'react-scroll';
 
-const ModalResumeMenu = ( props ) => {
+const ModalResumeMenu = (props) => {
     const [show, setShow] = useState(false);
     const [toggle, setToggle] = useState(false);
     const modal_resume_menu = useRef();
@@ -27,85 +27,87 @@ const ModalResumeMenu = ( props ) => {
         } else {
             closeDropDown();
         }
-    },[toggle]); 
+    }, [toggle]);
 
     return (
-        <li className={ ( show ? "show" : "" ) + " nav-item nav-item-has-children dropdown-child-click-effect" }>
-            <a title="Resume" href={ process.env.PUBLIC_URL + "/" }>Resume</a>
+        <li className={(show ? "show" : "") + " nav-item nav-item-has-children dropdown-child-click-effect"}>
+            <a title="Resume" href={process.env.PUBLIC_URL + "/"}>Home</a>
 
-            <span onClick={ () => setToggle(!toggle) } className="dropdown-toggle dropdown-custom-icon">
+            <span onClick={() => setToggle(!toggle)} className="dropdown-toggle dropdown-custom-icon">
                 <span className="dropdown-icon">
                     <i className="fas fa-chevron-down"></i>
                 </span>
             </span>
 
             <Collapse in={show}>
-                { props.homePage ? 
+                {props.homePage ?
                     (<ul className="dropdown-menu" ref={modal_resume_menu}>
                         <li>
-                            <Link title="About me" onClick={ () => closeModal() } delay={200} className="dropdown-item" smooth={ true } duration={ 0 } href="#about-me" to="about-me">About me</Link>
+                            <Link title="About me" onClick={() => closeModal()} delay={200} className="dropdown-item" smooth={true} duration={0} href="#about-me" to="about-me">About me</Link>
                         </li>
-            
+
                         <li>
-                            <Link title="What I do" onClick={ () => closeModal() } delay={200} className="dropdown-item" smooth={ true } duration={ 0 } href="#what-i-do" to="what-i-do">What I do</Link>
+                            <Link title="What I do" onClick={() => closeModal()} delay={200} className="dropdown-item" smooth={true} duration={0} href="#what-i-do" to="what-i-do">What I do</Link>
                         </li>
-            
+
                         <li>
-                            <Link title="Experience" onClick={ () => closeModal() } delay={200} className="dropdown-item" smooth={ true } duration={ 0 } href="#experience" to="experience">Experience</Link>
+                            <Link title="Experience" onClick={() => closeModal()} delay={200} className="dropdown-item" smooth={true} duration={0} href="#experience" to="experience">Experience</Link>
                         </li>
-            
+
                         <li>
-                            <Link title="Education" onClick={ () => closeModal() } delay={200} className="dropdown-item" smooth={ true } duration={ 0 } href="#education" to="education">Education</Link>
+                            <Link title="Education" onClick={() => closeModal()} delay={200} className="dropdown-item" smooth={true} duration={0} href="#education" to="education">Education</Link>
                         </li>
-            
+
                         <li>
-                            <Link title="Portfolio" onClick={ () => closeModal() } delay={200} className="dropdown-item" smooth={ true } duration={ 0 } href="#portfolio" to="portfolio">Portfolio</Link>
+                            <Link title="Skills" onClick={() => closeModal()} delay={200} className="dropdown-item" smooth={true} duration={0} href="#Skills" to="skills">Skills</Link>
                         </li>
-            
+
                         <li>
-                            <Link title="Testimonials" onClick={ () => closeModal() } delay={200} className="dropdown-item" smooth={ true } duration={ 0 } href="#testimonials" to="testimonials">Testimonials</Link>
+                            <Link title="Portfolio" onClick={() => closeModal()} delay={200} className="dropdown-item" smooth={true} duration={0} href="#portfolio" to="portfolio">Portfolio</Link>
                         </li>
-            
+
                         <li>
-                            <Link title="Clients" onClick={ () => closeModal() } delay={200} className="dropdown-item" smooth={ true } duration={ 0 } href="#clients" to="clients">Clients</Link>
+                            <Link title="Services" onClick={() => closeModal()} delay={200} className="dropdown-item" smooth={true} duration={0} href="#services" to="services">Services</Link>
                         </li>
-            
+
                         <li>
-                            <Link title="Contact me" onClick={ () => closeModal() } delay={200} className="dropdown-item" smooth={ true } duration={ 0 } href="#contact-me" to="contact-me">Contact me</Link>
+                            <Link title="Contact me" onClick={() => closeModal()} delay={200} className="dropdown-item" smooth={true} duration={0} href="#contact-me" to="contact-me">Contact me</Link>
                         </li>
                     </ul>)
                     :
                     (<ul className="dropdown-menu" ref={modal_resume_menu}>
                         <li>
-                            <a title="About me" className="dropdown-item" href={ process.env.PUBLIC_URL + "/#about-me" }>About me</a>
+                            <a title="About me" className="dropdown-item" href={process.env.PUBLIC_URL + "/#about-me"}>About me</a>
                         </li>
-            
+
                         <li>
-                            <a title="What I do" className="dropdown-item" href={ process.env.PUBLIC_URL + "/#what-i-do" }>What I do</a>
+                            <a title="What I do" className="dropdown-item" href={process.env.PUBLIC_URL + "/#what-i-do"}>What I do</a>
                         </li>
-            
+
                         <li>
-                            <a title="Experience" className="dropdown-item" href={ process.env.PUBLIC_URL + "/#experience" }>Experience</a>
+                            <a title="Experience" className="dropdown-item" href={process.env.PUBLIC_URL + "/#experience"}>Experience</a>
                         </li>
-            
+
                         <li>
-                            <a title="Education" className="dropdown-item" href={ process.env.PUBLIC_URL + "/#education" }>Education</a>
+                            <a title="Education" className="dropdown-item" href={process.env.PUBLIC_URL + "/#education"}>Education</a>
                         </li>
-            
+
+
+
                         <li>
-                            <a title="Portfolio" className="dropdown-item" href={ process.env.PUBLIC_URL + "/#portfolio" }>Portfolio</a>
+                            <Link title="Skills" onClick={() => closeModal()} delay={200} className="dropdown-item" smooth={true} duration={0} href="#Skills" to="skills">Skills</Link>
                         </li>
-            
+
                         <li>
-                            <a title="Testimonials" className="dropdown-item" href={ process.env.PUBLIC_URL + "/#testimonials" }>Testimonials</a>
+                            <a title="Portfolio" className="dropdown-item" href={process.env.PUBLIC_URL + "/#portfolio"}>Portfolio</a>
                         </li>
-            
+
                         <li>
-                            <a title="Clients" className="dropdown-item" href={ process.env.PUBLIC_URL + "/#clients" }>Clients</a>
+                            <a title="Services" className="dropdown-item" href={process.env.PUBLIC_URL + "/#services"}>Services</a>
                         </li>
-            
+
                         <li>
-                            <a title="Contact me" className="dropdown-item" href={ process.env.PUBLIC_URL + "/#contact-me" }>Contact me</a>
+                            <a title="Contact me" className="dropdown-item" href={process.env.PUBLIC_URL + "/#contact-me"}>Contact me</a>
                         </li>
                     </ul>)
                 }

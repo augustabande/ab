@@ -683,3 +683,6 @@ body:not(.single)[class*='-full-width'] [class*='-section'] [class*='section-box
 //	background-repeat: repeat-y;
 //	background-position: center;
 //}
+html {
+	overflow-x: hidden;
+}

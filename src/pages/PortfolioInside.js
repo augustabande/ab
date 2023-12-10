@@ -58,22 +58,29 @@ const PortfolioInside = () => {
 
                                         <div className="project-content">
                                             <div className="project-title">
-                                                <img className="project-icon" src="https://assets.website-files.com/608de3eb1024a2a29aa6ef64/60fe2ba242d40926fb2e5eae_ehuXhBqx_400x400-removebg-preview%201%20(1).png" loading="lazy" alt="" height="30"></img><h3>{item.title}</h3>
+                                                <img src={item.icon} alt={item.title} className="project-icon" />
+                                                <a href={item.url} target="_blank" rel="noopener noreferrer">
+
+                                                    <h3>{item.title}</h3>
+                                                </a>
 
                                             </div>
 
-                                            <div class="label project_main">ABOUT</div>
+                                            <div className="label project_main">ABOUT</div>
 
                                             <p>{item.description}</p>
-                                            <img src={item.imgSrc} alt={item.title} className="project-image" />
+                                            <a href={item.url} target="_blank" rel="noopener noreferrer">
+                                                <img src={item.imgSrc} alt={item.title} className="project-image" />
+                                            </a>
+
                                             <div className="row gutter-width-md with-pb-md">
                                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="label project_main role">ROLES</div>
-                                                    <p class="project-role">{item.role} </p>
+                                                    <div className="label project_main role">ROLES</div>
+                                                    <p className="project-role">{item.role} </p>
                                                 </div>
                                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="label project_main technology">TECHNOLOGIES</div>
-                                                    <p class="project-technologies">{item.technologies} </p>
+                                                    <div className="label project_main technology">TECHNOLOGIES</div>
+                                                    <p className="project-technologies">{item.technologies} </p>
                                                 </div>
                                             </div>
 

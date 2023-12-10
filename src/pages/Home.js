@@ -16,6 +16,7 @@ import Clients from '../blocks/home/Clients';
 import Articles from '../blocks/home/Articles';
 import ContactMe from '../blocks/home/ContactMe';
 import Skills from '../blocks/home/Skills';
+import Services from '../blocks/home/Services';
 
 const Home = () => {
     useEffect(() => {
@@ -40,11 +41,11 @@ const Home = () => {
         <Fragment>
             <MetaTags>
                 <meta charSet="UTF-8" />
-                <title>Home | Personal Resume vCard React JS Template</title>
+                <title>Home | Digital Lab web services</title>
 
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="" />
+                <meta name="description" content="Expert in Angular and React, UI/UX and WordPress. Elevate your digital presence with our bespoke, efficient web solutions." />
                 <meta name="keywords" content="" />
                 <meta name="robots" content="index, follow, noodp" />
                 <meta name="googlebot" content="index, follow" />
@@ -73,11 +74,9 @@ const Home = () => {
 
                         <Portfolio />
 
-                        <Clients />
+                        <Services />
 
                         <ContactMe />
-
-                        <Articles />
                     </div>
                 </div>
             </main>
