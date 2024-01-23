@@ -67,6 +67,7 @@ const ResumeMenu = (props) => {
                             <a title="About me" className="dropdown-item" href={process.env.PUBLIC_URL + "/#about-me"}>About me</a>
                         </li>
 
+
                         <li>
                             <a title="What I do" className="dropdown-item" href={process.env.PUBLIC_URL + "/#what-i-do"}>What I do</a>
                         </li>
@@ -80,11 +81,18 @@ const ResumeMenu = (props) => {
                         </li>
 
                         <li>
+                            <Link title="Skills" className="dropdown-item" smooth={true} duration={0} href="#skills" to="skills">Skills</Link>
+
+                        </li>
+
+                        <li>
                             <Link title="Portfolio" className="dropdown-item" smooth={true} duration={0} href="#portfolio" to="portfolio">Portfolio</Link>
                         </li>
 
                         <li>
-                            <Link title="Skills" className="dropdown-item" smooth={true} duration={0} href="#skills" to="skills">Skills</Link>
+
+                            <Link title="Services" className="dropdown-item" smooth={true} duration={0} href="#services" to="services">Services</Link>
+
                         </li>
 
                         <li>
