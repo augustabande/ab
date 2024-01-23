@@ -5,7 +5,7 @@ import galleryData from '../../data/portfolio/galleryData.json';
 
 function Portfolio() {
     useEffect(() => {
-        new Swiper( '.adv-slider-portfolio .adv-swiper-container', {
+        new Swiper('.adv-slider-portfolio .adv-swiper-container', {
             // ADV swiper
             noSwipingClass: 'adv-swiper-no-swiping',
             containerModifierClass: 'adv-swiper-container-',
@@ -29,7 +29,7 @@ function Portfolio() {
             },
             spaceBetween: 0,
             slidesPerView: 'auto'
-        } );
+        });
     });
 
     return (
@@ -38,26 +38,29 @@ function Portfolio() {
                 <div className="title" data-aos="fade-up">
                     <h2>Portfolio</h2>
                 </div>
+
             </div>
+
+
 
             <div className="adv-slider-portfolio" data-aos="fade-up">
                 <div className="adv-swiper-container">
                     <div className="adv-swiper-wrapper portfolio-items">
-                        { galleryData && galleryData.map( ( item, key ) => {
+                        {galleryData && galleryData.map((item, key) => {
                             return (
-                                <a key={key} href={ process.env.PUBLIC_URL + item.link } className="adv-swiper-slide portfolio-item">
+                                <a key={key} href={process.env.PUBLIC_URL + item.link} className="adv-swiper-slide portfolio-item">
                                     <div className="portfolio-item-content">
-                                        <h5 className="portfolio-item-category" data-aos="fade-up">{ item.category }</h5>
-        
-                                        <h3 className="portfolio-item-t-head" data-aos="fade-up">{ item.title }</h3>
+                                        <h5 className="portfolio-item-category" data-aos="fade-up">{item.category}</h5>
+
+                                        <h3 className="portfolio-item-t-head" data-aos="fade-up">{item.title}</h3>
                                     </div>
-        
+
                                     <div className="img object-fit">
                                         <div className="object-fit-cover">
-                                            <img src={ item.imgSrc } alt={ item.title } />
+                                            <img src={item.imgSrc} alt={item.title} />
                                         </div>
                                     </div>
-        
+
                                     <div className="img-bg-color"></div>
                                 </a>
                             );
@@ -72,7 +75,14 @@ function Portfolio() {
                         <div className="adv-2-swiper-button-next">
                             <i className="fas fa-long-arrow-alt-right"></i>
                         </div>
+
                     </div>
+                </div>
+            </div>
+            <br></br>
+            <div className="wrapper">
+                <div className="action align-self-center">
+                    <a href="assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary">DOWNLOAD CV</a>
                 </div>
             </div>
         </section>

@@ -16,39 +16,39 @@ const Header = () => {
     const location = useLocation();
 
     useEffect(() => {
-        if ( location.pathname === process.env.PUBLIC_URL + "/" ) {
-            window.addEventListener( 'scroll', updateScroll );
+        if (location.pathname === process.env.PUBLIC_URL + "/") {
+            window.addEventListener('scroll', updateScroll);
         }
 
         return () => {
-            window.removeEventListener( 'scroll', updateScroll );
+            window.removeEventListener('scroll', updateScroll);
         }
     });
 
     useEffect(() => {
-        if ( location.pathname === process.env.PUBLIC_URL + "/") {
+        if (location.pathname === process.env.PUBLIC_URL + "/") {
             setHomePage(true);
         } else {
             setHomePage(false);
         }
-    },[location.pathname]);
+    }, [location.pathname]);
 
     const updateScroll = () => {
         setScrollPosition(window.scrollY);
-        let el              = document.querySelector( '#main section:nth-child(2)' ).getBoundingClientRect();
-        let fromTop         = -1;
+        let el = document.querySelector('#main section:nth-child(2)').getBoundingClientRect();
+        let fromTop = -1;
 
-        if ( window.pageYOffset - ( el.top + scrollPosition ) > fromTop ) {
-            document.body.classList.add( 'header-fixed' );
+        if (window.pageYOffset - (el.top + scrollPosition) > fromTop) {
+            document.body.classList.add('header-fixed');
             setSlideInDownClass(' animated slideInDown');
         } else {
-            document.body.classList.remove( 'header-fixed' );
+            document.body.classList.remove('header-fixed');
             setSlideInDownClass('');
         }
     };
 
     return (
-        <header id="header" className={ "site-header " + slideInDownClass }>
+        <header id="header" className={"site-header " + slideInDownClass}>
             <div className="wrapper">
                 <div className="header-content header-content-primary">
                     <div className="d-flex justify-content-between">
@@ -65,7 +65,7 @@ const Header = () => {
                                         <ul className="nav">
                                             <ResumeMenu homePage={homePage} />
 
-                                            <BlogMenu />
+                                            {/*<BlogMenu />*/}
                                         </ul>
                                     </nav>
                                 </div>
@@ -73,7 +73,7 @@ const Header = () => {
                                 <SearchModal />
 
                                 <div className="header-actions">
-                                    <Actions />
+                                    {/*<Actions />*/}
                                 </div>
 
                                 <MenuModal homePage={homePage} />
@@ -93,7 +93,7 @@ const Header = () => {
                                         <ul className="nav">
                                             <ResumeMenu homePage={homePage} />
 
-                                            <BlogMenu />
+                                            { }
                                         </ul>
                                     </nav>
                                 </div>
@@ -102,7 +102,7 @@ const Header = () => {
                                     <div className="d-flex justify-content-between align-items-center h-100">
                                         <SearchModal />
 
-                                        <MenuModal homePage={homePage}/>
+                                        <MenuModal homePage={homePage} />
                                     </div>
                                 </div>
                             </div>
@@ -113,7 +113,7 @@ const Header = () => {
                                 <SearchModal />
 
                                 <div className="header-actions">
-                                    <Actions />
+                                    {/*<Actions />*/}
                                 </div>
                             </div>
                         </div>

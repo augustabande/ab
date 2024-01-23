@@ -9,7 +9,7 @@
 		position: relative;
 		overflow: hidden;
 
-		.portfolio-item-content{
+		.portfolio-item-content {
 			position: absolute;
 			left: 0;
 			top: 50%;
@@ -101,7 +101,9 @@
 		}
 
 		.adv-2-swiper-button {
-			&-prev, &-next {
+
+			&-prev,
+			&-next {
 				top: inherit;
 				@include transform(translateY(0));
 				bottom: $space_sm;
@@ -174,8 +176,8 @@
 				margin-bottom: 0;
 			}
 
-			> .col,
-			> [class*='col-'] {
+			>.col,
+			>[class*='col-'] {
 				padding-bottom: $space_md;
 
 				@media #{$media_xl} {
@@ -245,4 +247,48 @@
 			opacity: 0.5;
 		}
 	}
+}
+
+/*=============================
+// Portfolio Inside
+=============================*/
+.project-title {
+	height: 60px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 100px;
+	margin-bottom: 3em;
+	display: flex;
+}
+
+.label {
+	max-width: 1140px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+}
+
+.label.project_main {
+	width: 100%;
+	max-width: 1140px;
+	color: rgba(22, 28, 33, .6);
+	margin-bottom: 1em;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.project-icon {
+	display: block;
+	height: 30px !important;
+	margin-right: 10px;
+}
+
+.project-image {
+	margin-bottom: 20px;
 }

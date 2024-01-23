@@ -24,11 +24,11 @@ const ContactMe = () => {
                                     <div className="contacts-information-dot"></div>
 
                                     <div className="contacts-information-items">
-                                        <div className="contacts-information-item" data-aos="zoom-in" data-aos-delay="200">
+                                        {/*<div className="contacts-information-item" data-aos="zoom-in" data-aos-delay="200">
                                             <h6 className="contacts-information-item-title">Address</h6>
 
                                             <p className="contacts-information-item-description">Fuerteventura, Canary Islands (SPAIN)</p>
-                                        </div>
+                                        </div>*/}
 
                                         <div className="contacts-information-item" data-aos="zoom-in" data-aos-delay="400">
                                             <h6 className="contacts-information-item-title">Email</h6>

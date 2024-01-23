@@ -1,26 +1,26 @@
 [
     {
         "id": 1,
-        "icon": "fas fa-camera",
-        "description": "Photography",
+        "icon": "fas fa-code",
+        "description": "Web Development",
         "delay": 200
     },
     {
-        "id": 2,
-        "icon": "fas fa-hashtag",
-        "description": "Social Media",
-        "delay": 400
-    },
-    {
         "id": 3,
-        "icon": "fas fa-shopping-cart",
-        "description": "Ecommerce",
+        "icon": "fas fa-pencil-ruler",
+        "description": "UI/UX Design",
         "delay": 600
     },
     {
         "id": 4,
-        "icon": "fas fa-pen-nib",
-        "description": "Design",
+        "icon": "fas fa-chart-line",
+        "description": "Data Visualization",
+        "delay": 800
+    },
+    {
+        "id": 4,
+        "icon": "fa fa-comments",
+        "description": "Web Consultancy",
         "delay": 800
     }
 ]

@@ -14,16 +14,16 @@ import Comments from '../blocks/blog-single-post/Comments';
 
 const BlogSinglePost = () => {
     useEffect(() => {
-        document.body.classList.add( 'single' );
-        document.body.classList.add( 'single-post' );
-        document.body.classList.add( 'aos-true' );
+        document.body.classList.add('single');
+        document.body.classList.add('single-post');
+        document.body.classList.add('aos-true');
 
         return () => {
-            document.body.classList.remove( 'single' );
-            document.body.classList.remove( 'single-post' );
-            document.body.classList.remove( 'aos-true' );
+            document.body.classList.remove('single');
+            document.body.classList.remove('single-post');
+            document.body.classList.remove('aos-true');
         }
-    },[]);
+    }, []);
 
     return (
         <Fragment>

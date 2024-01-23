@@ -2,8 +2,8 @@ import React from 'react';
 import SkillsData from '../../data/home/skillsData.json';
 
 const Skills = () => {
-    return (
-        <section id="skills" className="block spacer p-top-xl">
+  return (
+    <section id="skills" className="block spacer p-top-xl">
       {/* My Skills */}
       <div className="wrapper">
         <div className="title" data-aos="fade-up">
@@ -14,21 +14,22 @@ const Skills = () => {
             {SkillsData.length > 0 &&
               SkillsData.map((skill, index) => (
                 <div className="grid-item" key={index}>
-                  <ul className="list-group">
-                    <li className="list-group-item d-flex justify-content-between align-items-center">
-                      {skill.name}{" "}
-                      <span className="badge badge-primary badge-pill">
-                        {skill.percent}%
-                      </span>
-                    </li>
-                  </ul>
+                  <div className="skill-container">
+                    <div className="skill-labels">
+                      <label>{skill.name}</label>
+                      <span className="skill-percentage">{skill.percent}%</span>
+                    </div>
+                    <div className="progress">
+                      <div className="progress-bar" style={{ width: `${skill.percent}%` }}></div>
+                    </div>
+                  </div>
                 </div>
               ))}
           </div>
         </div>
       </div>
     </section>
-    );
+  );
 };
 
 export default Skills;
