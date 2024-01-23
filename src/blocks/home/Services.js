@@ -3,11 +3,14 @@ import React from 'react';
 const Services = () => {
     return (
 
-        <section id="about-me" className="block spacer p-top-xl p-bottom-lg">
+        <section id="services" className="block spacer p-top-xl">
+            { }
+
             <div className="wrapper">
                 <div className="title" data-aos="fade-up">
                     <h2>Services</h2>
                 </div>
+
                 <div className="row gutter-width-md with-pb-lg justify-content-center">
                     <div className="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                         <div className="about-me-img" data-aos="zoom-in-right">
