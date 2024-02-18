@@ -169,13 +169,13 @@
                         $widget_xs: 0.9375rem;
 
                         &.gutter-width-xs {
-                            margin-left: -$widget_xs / 2 !important;
-                            margin-right: -$widget_xs / 2 !important;
+                            margin-left: -$widget_xs * 0.5 !important;
+                            margin-right: -$widget_xs * 0.5 !important;
 
                             > .col,
                             > [class*='col-'] {
-                                padding-left: $widget_xs / 2 !important;
-                                padding-right: $widget_xs/ 2 !important;
+                                padding-left: $widget_xs * 0.5 !important;
+                                padding-right: $widget_xs* 0.5 !important;
                             }
                         }
                     }
@@ -200,16 +200,16 @@
         display: table;
         line-height: normal;
         word-break: break-all;
-        margin-top: -$space_xs / 2;
-        margin-right: -$space_xs / 2;
+        margin-top: -$space_xs * 0.5;
+        margin-right: -$space_xs * 0.5;
 
         .tag-cloud-link {
             @extend .btn;
             @extend .btn-primary;
             @extend .btn-sm;
             @extend .min-w-auto;
-            margin-top: $space_xs / 2;
-            margin-right: $space_xs / 2;
+            margin-top: $space_xs * 0.5;
+            margin-right: $space_xs * 0.5;
             font-size: $f_size_sm;
         }
     }
@@ -263,14 +263,14 @@
         // Widget block: Gallery
         &.widget_media_gallery {
             .gallery {
-                margin-left: -$space_xs / 2;
-                margin-right: -$space_xs / 2;
+                margin-left: -$space_xs * 0.5;
+                margin-right: -$space_xs * 0.5;
                 margin-bottom: -$space_xs !important;
 
                 .gallery-item {
                     display: inline-block;
-                    padding-left: $space_xs / 2;
-                    padding-right: $space_xs / 2;
+                    padding-left: $space_xs * 0.5;
+                    padding-right: $space_xs * 0.5;
                     padding-bottom: $space_xs;
                     margin-bottom: 0 !important;
                 }

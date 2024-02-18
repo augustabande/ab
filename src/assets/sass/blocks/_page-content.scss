@@ -2,6 +2,8 @@
 // Page content
 //=================================================
 
+@use "sass:math";
+
 #page-content {
     .content {
         h1 {
@@ -79,7 +81,7 @@
                 padding: $space_pc_primary;
 
                 @media #{$media_xl} {
-                    padding: $space_pc_primary / 3.3 * 2;
+                    padding: math.div($space_pc_primary, 3.3) * 2;
                 }
             }
         }
@@ -89,7 +91,7 @@
                 padding: $space_pc_primary;
 
                 @media #{$media_xl} {
-                    padding: $space_pc_primary / 3.3 * 2;
+                    padding: math.div($space_pc_primary, 3.3) * 2;
                 }
             }
         }
@@ -226,7 +228,7 @@
                     padding: $space_pc_secondary;
 
                     @media #{$media_xl} {
-                        padding: $space_pc_secondary / 3.3 * 2;
+                        padding: math.div($space_pc_secondary, 3.3) * 2;
                     }
                 }
             }
@@ -236,7 +238,7 @@
                     padding: $space_pc_secondary;
 
                     @media #{$media_xl} {
-                        padding: $space_pc_secondary / 3.3 * 2;
+                        padding: math.div($space_pc_secondary, 3.3) * 2;
                     }
                 }
             }

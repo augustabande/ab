@@ -2,6 +2,8 @@
 // Portfolio
 //=================================================
 
+@use "sass:math";
+
 .portfolio-items {
 	.portfolio-item {
 		@extend .style-default;
@@ -169,7 +171,7 @@
 			margin-bottom: -$space_md;
 
 			@media #{$media_xl} {
-				margin-bottom: -$space_md / 1.65;
+				margin-bottom: math.div(-$space_md, 1.65);
 			}
 
 			@media #{$media_sm} {
@@ -181,7 +183,7 @@
 				padding-bottom: $space_md;
 
 				@media #{$media_xl} {
-					padding-bottom: $space_md / 1.65;
+					padding-bottom: math.div($space_md, 1.65);
 				}
 
 				@media #{$media_sm} {

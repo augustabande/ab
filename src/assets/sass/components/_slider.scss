@@ -275,8 +275,8 @@
 	display: inline-block;
 	background: $slider_button_color;
 	outline: none;
-	margin-left: $space_xs / 2;
-	margin-right: $space_xs / 2;
+	margin-left: $space_xs * 0.5;
+	margin-right: $space_xs * 0.5;
 	@extend .transition-all;
 
 	&:hover {

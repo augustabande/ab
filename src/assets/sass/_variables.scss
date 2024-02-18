@@ -5,6 +5,8 @@
 //=============================
 // Media queries
 //=============================
+@use "sass:math";
+
 $retina:     "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 $media_xxxl: "(min-width: 1920px)";
 $media_xxl:  "(max-width: 1700px)";
@@ -330,10 +332,10 @@ $close_color:                                         $body_links_color;
 //=============================
 $label_margin_bottom:                                 0;
 
-$input_padding_y:                                     1.158rem / 1.5;
-$input_padding_x:                                     1.579rem / 1.5;
-$input_padding_y_sm:                                  1.158rem / 2.5;
-$input_padding_x_sm:                                  1.579rem / 2.5;
+$input_padding_y:                                     math.div(1.158rem, 1.5);
+$input_padding_x:                                     math.div(1.579rem, 1.5);
+$input_padding_y_sm:                                  math.div(1.158rem, 2.5);
+$input_padding_x_sm:                                  math.div(1.579rem, 2.5);
 $input_padding_y_lg:                                  1.158rem;
 $input_padding_x_lg:                                  1.579rem;
 $input_font_size:                                     $f_size_df;

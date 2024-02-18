@@ -2,6 +2,8 @@
 // Nav
 //=================================================
 
+@use "sass:math";
+
 .nav {
 	font-size: $f_size_df;
 	@extend .list-unstyled;
@@ -123,12 +125,12 @@ $header_item_space: $space_md;
 #header {
 	nav {
 		&.menu-primary {
-			margin-bottom: -$header_item_space / 2.5;
+			margin-bottom: math.div(-$header_item_space, 2.5);
 			margin-right: -$header_item_space;
 
 			ul.nav {
 				li.nav-item {
-					padding-bottom: $header_item_space / 2.5;
+					padding-bottom: math.div($header_item_space, 2.5);
 					margin-right: $header_item_space;
 
 					a {
@@ -190,7 +192,7 @@ $header_item_space: $space_md;
 
 						.dropdown-icon {
 							font-size: 0.75rem;
-							padding-left: $header_item_space / 5;
+							padding-left: $header_item_space * 0.2;
 						}
 					}
 				}
@@ -212,8 +214,8 @@ $menu_primary_modal_mb: 1.316rem;
 				@extend .flex-column;
 
 				li.nav-item {
-					margin-top: $menu_primary_modal_mb / 2;
-					margin-bottom: $menu_primary_modal_mb / 2;
+					margin-top: $menu_primary_modal_mb * 0.5;
+					margin-bottom: $menu_primary_modal_mb * 0.5;
 					line-height: normal;
 					text-align: right;
 
@@ -260,8 +262,8 @@ $menu_primary_modal_mb: 1.316rem;
 					// Dropdown
 					> .dropdown-custom-icon {
 						color: $menu_links_color;
-						padding-left: $menu_primary_modal_mb / 1.35;
-						font-size: $menu_primary_modal_fz / 2.5;
+						padding-left: math.div($menu_primary_modal_mb, 1.35);
+						font-size: math.div($menu_primary_modal_fz, 2.5);
 
 						&:hover {
 							color: $menu_links_hover_color;
@@ -291,10 +293,10 @@ $menu_primary_modal_mb: 1.316rem;
 						li {
 							text-align: right;
 							width: 100%;
-							margin-bottom: $menu_primary_modal_mb / 2 !important;
+							margin-bottom: $menu_primary_modal_mb * 0.5 !important;
 
 							&:first-child {
-								margin-top: $menu_primary_modal_mb / 2 !important;
+								margin-top: $menu_primary_modal_mb * 0.5 !important;
 							}
 
 							&:last-child {
@@ -302,8 +304,8 @@ $menu_primary_modal_mb: 1.316rem;
 							}
 
 							> .dropdown-custom-icon {
-								padding-left: $menu_primary_modal_mb / 1.75;
-								font-size: $menu_primary_modal_fz / 1.75;
+								padding-left: math.div($menu_primary_modal_mb, 1.75);
+								font-size: math.div($menu_primary_modal_fz, 1.75);
 							}
 
 							.dropdown-icon {
@@ -314,7 +316,7 @@ $menu_primary_modal_mb: 1.316rem;
 							}
 
 							a {
-								font-size: $menu_primary_modal_fz / 1.35;
+								font-size: math.div($menu_primary_modal_fz, 1.35);
 							}
 
 							.dropdown-item {

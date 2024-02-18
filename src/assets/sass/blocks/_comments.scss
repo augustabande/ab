@@ -2,6 +2,8 @@
 // Comments
 //=================================================
 
+@use "sass:math";
+
 #comments {
     .comment-list {
         margin-top: $space_md;
@@ -43,11 +45,11 @@
                 margin-left: $space_md;
 
                 @media #{$media_xl} {
-                    margin-left: $space_md / 3.3 * 2;
+                    margin-left: math.div($space_md, 3.3) * 2;
                 }
 
                 @media #{$media_md} {
-                    margin-left: $space_md / 2;
+                    margin-left: $space_md * 0.5;
                 }
 
                 .comment {
@@ -113,8 +115,8 @@
 
         [class*='__comment-date'] {
             line-height: 0.8;
-            margin-top: $space_pc_secondary / 2.5;
-            margin-bottom: $space_pc_secondary / 2 !important;
+            margin-top: math.div($space_pc_secondary, 2.5);
+            margin-bottom: $space_pc_secondary * 0.5 !important;
         }
 
         [class*='block-latest-comments__comment-avatar'] {

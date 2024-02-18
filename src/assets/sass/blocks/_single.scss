@@ -66,16 +66,16 @@
                 display: table;
                 line-height: normal;
                 word-break: break-all;
-                margin-right: -$space_xs / 2;
-                margin-top: -$space_xs / 2;
+                margin-right: -$space_xs * 0.5;
+                margin-top: -$space_xs * 0.5;
 
                 .tag-cloud-link {
                     @extend .btn;
                     @extend .btn-primary;
                     @extend .btn-sm;
                     @extend .min-w-auto;
-                    margin-top: $space_xs / 2;
-                    margin-right: $space_xs / 2;
+                    margin-top: $space_xs * 0.5;
+                    margin-right: $space_xs * 0.5;
                     font-size: $f_size_sm !important;
                 }
             }
@@ -88,8 +88,8 @@
                 display: table;
                 line-height: normal;
                 word-break: break-all;
-                margin-right: -$space_xs / 2;
-                margin-top: -$space_xs / 2;
+                margin-right: -$space_xs * 0.5;
+                margin-top: -$space_xs * 0.5;
 
                 &:before, &:after {
                     display: none;
@@ -111,8 +111,8 @@
                     @extend .btn-primary;
                     @extend .btn-sm;
                     @extend .min-w-auto;
-                    margin-top: $space_xs / 2;
-                    margin-right: $space_xs / 2;
+                    margin-top: $space_xs * 0.5;
+                    margin-right: $space_xs * 0.5;
                     font-size: $f_size_sm;
                 }
             }

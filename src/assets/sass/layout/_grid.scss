@@ -5,16 +5,18 @@
 /*=============================
 // Grid gutter
 =============================*/
+@use "sass:math";
+
 .row {
     &.gutter-width {
         // Size xl
         &-xl {
-            margin-left: -$space_xl / 2;
-            margin-right: -$space_xl / 2;
+            margin-left: -$space_xl * 0.5;
+            margin-right: -$space_xl * 0.5;
 
             @media #{$media_xl} {
-                margin-left: -$space_xl / 3.3;
-                margin-right: -$space_xl / 3.3;
+                margin-left: math.div(-$space_xl, 3.3);
+                margin-right: math.div(-$space_xl, 3.3);
             }
 
             @media #{$media_sm} {
@@ -25,12 +27,12 @@
             // Col
             > .col,
             > [class*='col-'] {
-                padding-left: $space_xl / 2;
-                padding-right: $space_xl / 2;
+                padding-left: $space_xl * 0.5;
+                padding-right: $space_xl * 0.5;
 
                 @media #{$media_xl} {
-                    padding-left: $space_xl / 3.3;
-                    padding-right: $space_xl / 3.3;
+                    padding-left: math.div($space_xl, 3.3);
+                    padding-right: math.div($space_xl, 3.3);
                 }
 
                 @media #{$media_sm} {
@@ -42,12 +44,12 @@
 
         // Size lg
         &-lg {
-            margin-left: -$space_lg / 2;
-            margin-right: -$space_lg / 2;
+            margin-left: -$space_lg * 0.5;
+            margin-right: -$space_lg * 0.5;
 
             @media #{$media_xl} {
-                margin-left: -$space_lg / 3.3;
-                margin-right: -$space_lg / 3.3;
+                margin-left: math.div(-$space_lg, 3.3);
+                margin-right: math.div(-$space_lg, 3.3);
             }
 
             @media #{$media_sm} {
@@ -58,12 +60,12 @@
             // Col
             > .col,
             > [class*='col-'] {
-                padding-left: $space_lg / 2;
-                padding-right: $space_lg / 2;
+                padding-left: $space_lg * 0.5;
+                padding-right: $space_lg * 0.5;
 
                 @media #{$media_xl} {
-                    padding-left: $space_lg / 3.3;
-                    padding-right: $space_lg / 3.3;
+                    padding-left: math.div($space_lg, 3.3);
+                    padding-right: math.div($space_lg, 3.3);
                 }
 
                 @media #{$media_sm} {
@@ -75,12 +77,12 @@
 
         // Size md
         &-md {
-            margin-left: -$space_md / 2;
-            margin-right: -$space_md / 2;
+            margin-left: -$space_md * 0.5;
+            margin-right: -$space_md * 0.5;
 
             @media #{$media_xl} {
-                margin-left: -$space_md / 3.3;
-                margin-right: -$space_md / 3.3;
+                margin-left: math.div(-$space_md, 3.3);
+                margin-right: math.div(-$space_md, 3.3);
             }
 
             @media #{$media_sm} {
@@ -91,12 +93,12 @@
             // Col
             > .col,
             > [class*='col-'] {
-                padding-left: $space_md / 2;
-                padding-right: $space_md / 2;
+                padding-left: $space_md * 0.5;
+                padding-right: $space_md * 0.5;
 
                 @media #{$media_xl} {
-                    padding-left: $space_md / 3.3;
-                    padding-right: $space_md / 3.3;
+                    padding-left: math.div($space_md, 3.3);
+                    padding-right: math.div($space_md, 3.3);
                 }
 
                 @media #{$media_sm} {
@@ -108,12 +110,12 @@
 
         // Size sm
         &-sm {
-            margin-left: -$space_sm / 2;
-            margin-right: -$space_sm / 2;
+            margin-left: -$space_sm * 0.5;
+            margin-right: -$space_sm * 0.5;
 
             @media #{$media_xl} {
-                margin-left: -$space_sm / 3.3;
-                margin-right: -$space_sm / 3.3;
+                margin-left: math.div(-$space_sm, 3.3);
+                margin-right: math.div(-$space_sm, 3.3);
             }
 
             @media #{$media_sm} {
@@ -124,12 +126,12 @@
             // Col
             > .col,
             > [class*='col-'] {
-                padding-left: $space_sm / 2;
-                padding-right: $space_sm / 2;
+                padding-left: $space_sm * 0.5;
+                padding-right: $space_sm * 0.5;
 
                 @media #{$media_xl} {
-                    padding-left: $space_sm / 3.3;
-                    padding-right: $space_sm / 3.3;
+                    padding-left: math.div($space_sm, 3.3);
+                    padding-right: math.div($space_sm, 3.3);
                 }
 
                 @media #{$media_sm} {
@@ -141,12 +143,12 @@
 
         // Size xs
         &-xs {
-            margin-left: -$space_xs / 2;
-            margin-right: -$space_xs / 2;
+            margin-left: -$space_xs * 0.5;
+            margin-right: -$space_xs * 0.5;
 
             @media #{$media_xl} {
-                margin-left: -$space_xs / 3.3;
-                margin-right: -$space_xs / 3.3;
+                margin-left: math.div(-$space_xs, 3.3);
+                margin-right: math.div(-$space_xs, 3.3);
             }
 
             @media #{$media_sm} {
@@ -157,12 +159,12 @@
             // Col
             > .col,
             > [class*='col-'] {
-                padding-left: $space_xs / 2;
-                padding-right: $space_xs / 2;
+                padding-left: $space_xs * 0.5;
+                padding-right: $space_xs * 0.5;
 
                 @media #{$media_xl} {
-                    padding-left: $space_xs / 3.3;
-                    padding-right: $space_xs / 3.3;
+                    padding-left: math.div($space_xs, 3.3);
+                    padding-right: math.div($space_xs, 3.3);
                 }
 
                 @media #{$media_sm} {
@@ -299,12 +301,12 @@
         // Size xl
         &-xl {
             [class*='r-container'] {
-                margin-left: -$space_xl / 2;
-                margin-right: -$space_xl / 2;
+                margin-left: -$space_xl * 0.5;
+                margin-right: -$space_xl * 0.5;
 
                 @media #{$media_xl} {
-                    margin-left: -$space_xl / 3.3;
-                    margin-right: -$space_xl / 3.3;
+                    margin-left: math.div(-$space_xl, 3.3);
+                    margin-right: math.div(-$space_xl, 3.3);
                 }
 
                 @media #{$media_sm} {
@@ -316,12 +318,12 @@
                 > [class*='-row'] {
                     > .col,
                     > [class*='col-'] {
-                        padding-left: $space_xl / 2;
-                        padding-right: $space_xl / 2;
+                        padding-left: $space_xl * 0.5;
+                        padding-right: $space_xl * 0.5;
 
                         @media #{$media_xl} {
-                            padding-left: $space_xl / 3.3;
-                            padding-right: $space_xl / 3.3;
+                            padding-left: math.div($space_xl, 3.3);
+                            padding-right: math.div($space_xl, 3.3);
                         }
 
                         @media #{$media_sm} {
@@ -336,12 +338,12 @@
         // Size lg
         &-lg {
             [class*='r-container'] {
-                margin-left: -$space_lg / 2;
-                margin-right: -$space_lg / 2;
+                margin-left: -$space_lg * 0.5;
+                margin-right: -$space_lg * 0.5;
 
                 @media #{$media_xl} {
-                    margin-left: -$space_lg / 3.3;
-                    margin-right: -$space_lg / 3.3;
+                    margin-left: math.div(-$space_lg, 3.3);
+                    margin-right: math.div(-$space_lg, 3.3);
                 }
 
                 @media #{$media_sm} {
@@ -353,12 +355,12 @@
                 > [class*='-row'] {
                     > .col,
                     > [class*='col-'] {
-                        padding-left: $space_lg / 2;
-                        padding-right: $space_lg / 2;
+                        padding-left: $space_lg * 0.5;
+                        padding-right: $space_lg * 0.5;
 
                         @media #{$media_xl} {
-                            padding-left: $space_lg / 3.3;
-                            padding-right: $space_lg / 3.3;
+                            padding-left: math.div($space_lg, 3.3);
+                            padding-right: math.div($space_lg, 3.3);
                         }
 
                         @media #{$media_sm} {
@@ -373,12 +375,12 @@
         // Size md
         &-md {
             [class*='r-container'] {
-                margin-left: -$space_md / 2;
-                margin-right: -$space_md / 2;
+                margin-left: -$space_md * 0.5;
+                margin-right: -$space_md * 0.5;
 
                 @media #{$media_xl} {
-                    margin-left: -$space_md / 3.3;
-                    margin-right: -$space_md / 3.3;
+                    margin-left: math.div(-$space_md, 3.3);
+                    margin-right: math.div(-$space_md, 3.3);
                 }
 
                 @media #{$media_sm} {
@@ -390,12 +392,12 @@
                 > [class*='-row'] {
                     > .col,
                     > [class*='col-'] {
-                        padding-left: $space_md / 2;
-                        padding-right: $space_md / 2;
+                        padding-left: $space_md * 0.5;
+                        padding-right: $space_md * 0.5;
 
                         @media #{$media_xl} {
-                            padding-left: $space_md / 3.3;
-                            padding-right: $space_md / 3.3;
+                            padding-left: math.div($space_md, 3.3);
+                            padding-right: math.div($space_md, 3.3);
                         }
 
                         @media #{$media_sm} {
@@ -410,12 +412,12 @@
         // Size sm
         &-sm {
             [class*='r-container'] {
-                margin-left: -$space_sm / 2;
-                margin-right: -$space_sm / 2;
+                margin-left: -$space_sm * 0.5;
+                margin-right: -$space_sm * 0.5;
 
                 @media #{$media_xl} {
-                    margin-left: -$space_sm / 3.3;
-                    margin-right: -$space_sm / 3.3;
+                    margin-left: math.div(-$space_sm, 3.3);
+                    margin-right: math.div(-$space_sm, 3.3);
                 }
 
                 @media #{$media_sm} {
@@ -427,12 +429,12 @@
                 > [class*='-row'] {
                     > .col,
                     > [class*='col-'] {
-                        padding-left: $space_sm / 2;
-                        padding-right: $space_sm / 2;
+                        padding-left: $space_sm * 0.5;
+                        padding-right: $space_sm * 0.5;
 
                         @media #{$media_xl} {
-                            padding-left: $space_sm / 3.3;
-                            padding-right: $space_sm / 3.3;
+                            padding-left: math.div($space_sm, 3.3);
+                            padding-right: math.div($space_sm, 3.3);
                         }
 
                         @media #{$media_sm} {
@@ -447,12 +449,12 @@
         // Size xs
         &-xs {
             [class*='r-container'] {
-                margin-left: -$space_xs / 2;
-                margin-right: -$space_xs / 2;
+                margin-left: -$space_xs * 0.5;
+                margin-right: -$space_xs * 0.5;
 
                 @media #{$media_xl} {
-                    margin-left: -$space_xs / 3.3;
-                    margin-right: -$space_xs / 3.3;
+                    margin-left: math.div(-$space_xs, 3.3);
+                    margin-right: math.div(-$space_xs, 3.3);
                 }
 
                 @media #{$media_sm} {
@@ -464,12 +466,12 @@
                 > [class*='-row'] {
                     > .col,
                     > [class*='col-'] {
-                        padding-left: $space_xs / 2;
-                        padding-right: $space_xs / 2;
+                        padding-left: $space_xs * 0.5;
+                        padding-right: $space_xs * 0.5;
 
                         @media #{$media_xl} {
-                            padding-left: $space_xs / 3.3;
-                            padding-right: $space_xs / 3.3;
+                            padding-left: math.div($space_xs, 3.3);
+                            padding-right: math.div($space_xs, 3.3);
                         }
 
                         @media #{$media_sm} {
