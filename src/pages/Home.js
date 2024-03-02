@@ -11,9 +11,9 @@ import WhatIDo from '../blocks/home/WhatIDo';
 import Experience from '../blocks/home/Experience';
 import Education from '../blocks/home/Education';
 import Portfolio from '../blocks/home/Portfolio';
-import Testimonials from '../blocks/home/Testimonials';
-import Clients from '../blocks/home/Clients';
-import Articles from '../blocks/home/Articles';
+//import Testimonials from '../blocks/home/Testimonials';
+//import Clients from '../blocks/home/Clients';
+//import Articles from '../blocks/home/Articles';
 import ContactMe from '../blocks/home/ContactMe';
 import Skills from '../blocks/home/Skills';
 import Services from '../blocks/home/Services';
@@ -73,8 +73,6 @@ const Home = () => {
                         <Skills />
 
                         <Portfolio />
-
-                        <Services />
 
                         <ContactMe />
                     </div>
