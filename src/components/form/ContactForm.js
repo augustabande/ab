@@ -144,58 +144,18 @@ class ContactForm extends Component {
 
     render() {
         return (
-            <form
-                data-netlify="true"
-                name="contact"
-                method="post"
-                onSubmit={ this.submitForm }
-            >
-                <div className="form-group form-group-sm" data-aos="fade-up">
-                    <input type="hidden" name="form-name" value="contact" />
-                    <label htmlFor="cf-1-name" className="form-label-lg before">Name</label>
-                    <input 
-                        name="name" 
-                        type="text" 
-                        id="cf-1-name" 
-                        placeholder="Enter your name" 
-                        required="required" 
-                        className="form-control form-control-lg"
-                        value={ this.state.values.name }
-                        onChange={ this.handleInputChange }
-                    />
-                </div>
-
-                <div className="form-group form-group-sm" data-aos="fade-up">
-                    <label htmlFor="cf-1-email" className="form-label-lg before">Email</label>
-                    <input 
-                        name="email" 
-                        type="email" 
-                        id="cf-1-email" 
-                        placeholder="Enter your email" 
-                        required="required" 
-                        className="form-control form-control-lg"
-                        value={ this.state.values.email }
-                        onChange={ this.handleInputChange }
-                    />
-                </div>
-
-                <div className="form-group form-group-sm" data-aos="fade-up">
-                    <label htmlFor="cf-1-message" className="form-label-lg before">Message</label>
-                    <textarea 
-                        name="message" 
-                        id="cf-1-message"
-                        placeholder="Enter your message" 
-                        required="required" 
-                        className="form-control form-control-lg"
-                        value={ this.state.values.message }
-                        onChange={ this.handleInputChange }
-                    ></textarea>
-                </div>
-
-                <div className="form-group form-group-sm mb-0" data-aos="fade-up">
-                    <button type="submit" aria-label="Send message" className="btn btn-primary">Send Message</button>
-                </div>
+            <form name="contact" netlify>
+                <p>
+                    <label>Name <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Email <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
             </form>
+            
         );
     };
 };
