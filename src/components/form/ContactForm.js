@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 class ContactForm extends Component {
-    navigate = useNavigate();
 
     constructor( props ) {
         super( props );
