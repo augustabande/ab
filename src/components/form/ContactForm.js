@@ -20,8 +20,22 @@ class ContactForm extends Component {
             delay: 5000
         };
     };
+    handleSubmit = (event) => {
+        event.preventDefault();
 
-    submitForm = async e => {
+        const myForm = event.target;
+        const formData = new FormData(myForm);
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+            .then(() => navigate("/thank-you/"))
+            .catch((error) => alert(error));
+    };
+
+    /*submitForm = async e => {
         //e.preventDefault();
 
         if ( document.querySelector( '#alert' ) ) {
@@ -30,7 +44,7 @@ class ContactForm extends Component {
 
         this.setState( { isSubmitting: true } );
 
-        /*axios.post( 'https://store.adveits.com/API/form.php', this.state.values, {
+        axios.post( 'https://store.adveits.com/API/form.php', this.state.values, {
             headers: {
                 'Access-Control-Allow-Origin': '*',
                 'Content-Type': 'application/json; charset=UTF-8'
@@ -51,8 +65,8 @@ class ContactForm extends Component {
             this.callAlert( this.state.responseMessage, response.data.status )
         } ).catch( error => {
             this.callAlert( this.state.errorMessage, 'error' )
-        } );*/
-    };
+        } );
+    };*/
 
     removeAlert = () => {
         clearTimeout( this.state.alertTimeout );
@@ -103,9 +117,14 @@ class ContactForm extends Component {
 
     render() {
         return (
-            <form id="cf-1" name="contact-form" className="contact-form" data-aos="fade-up" data-netlify="true">
+            <form
+                data-netlify="true"
+                name="contact"
+                method="post"
+                onSubmit={handleSubmit}
+            >
                 <div className="form-group form-group-sm" data-aos="fade-up">
-                    <input type="hidden" name="form-name" value="contact-form" />
+                    <input type="hidden" name="form-name" value="contact" />
                     <label htmlFor="cf-1-name" className="form-label-lg before">Name</label>
                     <input 
                         name="name" 
