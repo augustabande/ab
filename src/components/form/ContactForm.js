@@ -144,7 +144,7 @@ class ContactForm extends Component {
 
     render() {
         return (
-            <form name="contact" netlify>
+            <form name="contact" data-netlify="true" netlify>
                 <p>
                     <label>Name <input type="text" name="name" /></label>
                 </p>
