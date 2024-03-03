@@ -103,7 +103,7 @@ class ContactForm extends Component {
 
     render() {
         return (
-            <form onSubmit={ this.submitForm } method="post" action="form.php" id="cf-1" className="contact-form" data-aos="fade-up" data-netlify="true">
+            <form id="cf-1" className="contact-form" data-aos="fade-up" data-netlify="true">
                 <div className="form-group form-group-sm" data-aos="fade-up">
                     <label htmlFor="cf-1-name" className="form-label-lg before">Name</label>
                     <input 
