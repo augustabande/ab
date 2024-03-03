@@ -31,7 +31,21 @@ class ContactForm extends Component {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString(),
         })
-            .then(() => navigate("/thank-you/"))
+            .then( response => {
+                if ( response.data.status === 'success' ) {
+                    this.setState( { responseMessage: this.state.successMessage } );
+                }
+
+                if ( response.data.status === 'warning' ) {
+                    this.setState( { responseMessage: this.state.warningMessage } );
+                }
+
+                if ( response.data.status === 'error' ) {
+                    this.setState( { responseMessage: this.state.errorMessage } );
+                }
+
+                this.callAlert( this.state.responseMessage, response.data.status )
+            } )
             .catch((error) => alert(error));
     };
 
