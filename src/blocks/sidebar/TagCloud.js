@@ -10,7 +10,7 @@ const TagCloud = () => {
             <div className="tagcloud">
                 { CloudData && CloudData.map( ( item, key ) => {
                     return (
-                        <a key={ key } title={ item.title } href={ process.env.PUBLIC_URL + item.link } className="tag-cloud-link" >{ item.title }</a>
+                        <a key={ key } title={ item.title } href={ process.env.PUBLIC_URL + item.link } aria-label="Tag" className="tag-cloud-link" >{ item.title }</a>
                     );
                 })}
             </div>

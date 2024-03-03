@@ -13,7 +13,7 @@ const RecentEntries = () => {
                         <li key={ key } className="item">
                             <div className="row gutter-width-xs">
                                 <div className="col-3">
-                                    <a href={ process.env.PUBLIC_URL + item.link }>
+                                    <a aria-label="Entry" href={ process.env.PUBLIC_URL + item.link }>
                                         <div className="img object-fit overflow-hidden">
                                             <div className="object-fit-cover transform-scale-h">
                                                 <img src={ item.imgSrc } alt={ item.title } />

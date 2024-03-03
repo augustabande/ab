@@ -11,12 +11,12 @@ const SearchModal = ( props ) => {
         <Fragment>
             { props.modal ?
                 (<div className="search-toggle align-self-start">
-                    <button onClick={ () => setShowModal(true) } type="button" className="btn btn-lg btn-link border-0 p-0 min-w-auto" data-toggle="modal" data-target="#search-modal">Search</button>
+                    <button onClick={ () => setShowModal(true) } type="button" aria-label="Search" className="btn btn-lg btn-link border-0 p-0 min-w-auto" data-toggle="modal" data-target="#search-modal">Search</button>
                 </div>)
 
             :
                 (<div className="header-search-toggle">
-                    <button onClick={ () => setShowModal(true) } type="button" className="btn btn-lg btn-link border-0 p-0 min-w-auto" data-toggle="modal" data-target="#search-modal"><i className="fas fa-search"></i></button>
+                    <button onClick={ () => setShowModal(true) } type="button" aria-label="Search" className="btn btn-lg btn-link border-0 p-0 min-w-auto" data-toggle="modal" data-target="#search-modal"><i className="fas fa-search"></i></button>
                 </div>)
             }
 

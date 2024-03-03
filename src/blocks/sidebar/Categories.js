@@ -11,7 +11,7 @@ const Categories = () => {
                 { CategoriesList && CategoriesList.map( ( item, key ) => {
                     return (
                         <li key={ key } className="cat-item">
-                            <a title={ item.title } href={ process.env.PUBLIC_URL + item.link }>{ item.title }</a>
+                            <a title={ item.title } aria-label="Category" href={ process.env.PUBLIC_URL + item.link }>{ item.title }</a>
                         </li>
                     );
                 })}

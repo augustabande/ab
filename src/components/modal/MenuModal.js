@@ -17,7 +17,7 @@ const MenuModal = ( props ) => {
     return (
         <Fragment>
             <div className="header-menu-toggle">
-                <button onClick={ () => setShowModal(true) } type="button" className="btn btn-lg btn-link border-0 p-0 min-w-auto" data-toggle="modal" data-target="#menu-modal"><i className="fas fa-bars"></i></button>
+                <button onClick={ () => setShowModal(true) } type="button" aria-label="Menu" className="btn btn-lg btn-link border-0 p-0 min-w-auto" data-toggle="modal" data-target="#menu-modal"><i className="fas fa-bars"></i></button>
             </div>
 
             <Modal 
@@ -41,7 +41,7 @@ const MenuModal = ( props ) => {
                         <div className="header-right d-flex justify-content-end">
                             <div className="d-flex align-items-center">
                                 <div className="menu-close-toggle">
-                                    <button onClick={ () => setShowModal(false) } type="button" className="close btn btn-lg btn-link border-0 p-0 min-w-auto" data-dismiss="modal" aria-label="Close"><i className="fas fa-times"></i></button>
+                                    <button onClick={ () => setShowModal(false) } aria-label="Close" type="button" className="close btn btn-lg btn-link border-0 p-0 min-w-auto" data-dismiss="modal" aria-label="Close"><i className="fas fa-times"></i></button>
                                 </div>
                             </div>
                         </div>

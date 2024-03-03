@@ -26,7 +26,7 @@ const ModalBlogMenu = () => {
 
     return (
         <li className={ ( show ? "show" : "" ) + " nav-item nav-item-has-children dropdown-child-click-effect" }>
-            <a title="Blog" href={ process.env.PUBLIC_URL + "/blog" }>Blog</a>
+            <a title="Blog" aria-label="Blog"  href={ process.env.PUBLIC_URL + "/blog" }>Blog</a>
 
             <span onClick={ () => setToggle(!toggle) } className="dropdown-toggle dropdown-custom-icon">
                 <span className="dropdown-icon">
@@ -37,11 +37,11 @@ const ModalBlogMenu = () => {
             <Collapse in={show}>
                 <ul className="dropdown-menu" ref={modal_blog_menu}>
                     <li>
-                        <a title="Blog" className="dropdown-item" href={ process.env.PUBLIC_URL + "/blog" }>Articles</a>
+                        <a title="Blog" aria-label="Blog" className="dropdown-item" href={ process.env.PUBLIC_URL + "/blog" }>Articles</a>
                     </li>
 
                     <li>
-                        <a title="Blog single post" className="dropdown-item" href={ process.env.PUBLIC_URL + "/blog-single-post" }>Blog single post</a>
+                        <a title="Blog single post" aria-label="Blog single post" className="dropdown-item" href={ process.env.PUBLIC_URL + "/blog-single-post" }>Blog single post</a>
                     </li>
                 </ul>
             </Collapse>

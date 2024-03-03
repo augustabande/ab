@@ -9,7 +9,7 @@ const SocialLinks = () => {
                 { SocialLinksData && SocialLinksData.map( ( item, key ) => {
                     return (
                         <li key={ key } className="social-links-item">
-                            <a title={ item.title } href={ item.href } target="_blank" rel="noopener noreferrer"><i className={ item.icon }></i></a>
+                            <a title={ item.title } href={ item.href } target="_blank" rel="noopener noreferrer" aria-label="Social link"><i className={ item.icon }></i></a>
                         </li> 
                     );
                 })}

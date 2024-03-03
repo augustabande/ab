@@ -12,7 +12,7 @@ const RecentComments = () => {
                     return (
                         <li key={ key } className="recentcomments">
                         <span className="comment-author-link">{ item.author }</span> on
-                        <a title="item.title" href={ process.env.PUBLIC_URL + item.link }>{ item.comment }</a>
+                        <a title="item.title" aria-label="Cpmment" href={ process.env.PUBLIC_URL + item.link }>{ item.comment }</a>
                     </li>
                     );
                 })}

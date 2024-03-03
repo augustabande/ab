@@ -7,7 +7,7 @@ const PortfolioPagination = () => {
                 <div className="portfolio-pagination">
                     <div className="row justify-content-between gutter-width-md with-pb-lg">
                         <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                            <a className="d-flex justify-content-start link previous-link" href={ process.env.PUBLIC_URL + "/portfolio-inside" }>
+                            <a className="d-flex justify-content-start link previous-link" aria-label="Link" href={ process.env.PUBLIC_URL + "/portfolio-inside" }>
                                 <div className="d-flex align-items-center justify-content-start">
                                     <div className="left">
                                         <p><i className="fas fa-long-arrow-alt-left"></i></p>
@@ -22,7 +22,7 @@ const PortfolioPagination = () => {
                         </div>
 
                         <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                            <a className="d-flex justify-content-end link next-link" href={ process.env.PUBLIC_URL + "/portfolio-inside" }>
+                            <a className="d-flex justify-content-end link next-link" aria-label="Link"  href={ process.env.PUBLIC_URL + "/portfolio-inside" }>
                                 <div className="d-flex align-items-center justify-content-end">
                                     <div className="left">
                                         <p className="link-text after">Next project</p>

@@ -23,7 +23,7 @@ const SearchResults = () => {
         <Fragment>
             <MetaTags>
                 <meta charSet="UTF-8" />
-                <title>Search results | Sely -  Personal Resume vCard React JS Template</title>
+                <title>Search results | Augusta Bande</title>
 
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -52,11 +52,11 @@ const SearchResults = () => {
                                             <div className="card card-post" data-aos="zoom-in" data-aos-delay="item.delay">
                                                 <div className="card-body p-0">
                                                     <h5 className="card-title">
-                                                        <a title={ item.title } href={ process.env.PUBLIC_URL + item.link }>{ item.title }</a>
+                                                        <a title={ item.title } aria-label="Title" href={ process.env.PUBLIC_URL + item.link }>{ item.title }</a>
                                                     </h5>
         
                                                     <div className="card-meta">
-                                                        <a href={ process.env.PUBLIC_URL + item.categoryLink }>{ item.category }</a>
+                                                        <a href={ process.env.PUBLIC_URL + item.categoryLink } aria-label="Metatag">{ item.category }</a>
                                                     </div>
         
                                                     <div className="card-text">

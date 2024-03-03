@@ -48,7 +48,7 @@ function Portfolio() {
                     <div className="adv-swiper-wrapper portfolio-items">
                         {galleryData && galleryData.map((item, key) => {
                             return (
-                                <a key={key} href={process.env.PUBLIC_URL + item.link} className="adv-swiper-slide portfolio-item">
+                                <a key={key} href={process.env.PUBLIC_URL + item.link} className="adv-swiper-slide portfolio-item" aria-label="Portfolio item">
                                     <div className="portfolio-item-content">
                                         <h5 className="portfolio-item-category" data-aos="fade-up">{item.category}</h5>
 
@@ -82,7 +82,7 @@ function Portfolio() {
             <br></br>
             <div className="wrapper">
                 <div className="action align-self-center">
-                    <a href="assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary">DOWNLOAD CV</a>
+                    <a href="assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary" aria-label="Download CV">DOWNLOAD CV</a>
                 </div>
             </div>
         </section>

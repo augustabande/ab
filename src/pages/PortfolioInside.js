@@ -29,7 +29,7 @@ const PortfolioInside = () => {
         <Fragment>
             <MetaTags>
                 <meta charSet="UTF-8" />
-                <title>Portfolio inside | Sely - Personal Resume vCard React JS Template</title>
+                <title>Portfolio inside | Augusta Bande</title>
 
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -59,7 +59,7 @@ const PortfolioInside = () => {
                                         <div className="project-content">
                                             <div className="project-title">
                                                 <img src={item.icon} alt={item.title} className="project-icon" />
-                                                <a href={item.url} target="_blank" rel="noopener noreferrer">
+                                                <a href={item.url} aria-label="Project" target="_blank" rel="noopener noreferrer">
 
                                                     <h3>{item.title}</h3>
                                                 </a>
@@ -69,7 +69,7 @@ const PortfolioInside = () => {
                                             <div className="label project_main">ABOUT</div>
 
                                             <p>{item.description}</p>
-                                            <a href={item.url} target="_blank" rel="noopener noreferrer">
+                                            <a href={item.url} aria-label="description" target="_blank" rel="noopener noreferrer">
                                                 <img src={item.imgSrc} alt={item.title} className="project-image" />
                                             </a>
 

@@ -18,7 +18,7 @@ const ResumeMenu = (props) => {
 
     return (
         <li onMouseEnter={() => openDropDown()} onMouseLeave={() => closeDropDown()} className={(show ? "show" : "") + " nav-item nav-item-has-children dropdown-hover"}>
-            <a title="Resume" href={process.env.PUBLIC_URL + "/"}>Home</a>
+            <a title="Resume" aria-label="Resume" href={process.env.PUBLIC_URL + "/"}>Home</a>
 
             <span className="dropdown-toggle dropdown-custom-icon">
                 <span className="dropdown-icon">

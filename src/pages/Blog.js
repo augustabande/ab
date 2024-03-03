@@ -24,7 +24,7 @@ const Blog = () => {
         <Fragment>
             <MetaTags>
                 <meta charSet="UTF-8" />
-                <title>Blog | Sely - Personal Resume vCard React JS Template</title>
+                <title>Blog | Augusta Bande</title>
 
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />

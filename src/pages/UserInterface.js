@@ -69,7 +69,7 @@ const UserInterface = () => {
         <Fragment>
             <MetaTags>
                 <meta charSet="UTF-8" />
-                <title>UI | LPersonal Resume vCard React JS Template</title>
+                <title>UI | Augusta Bande</title>
 
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />

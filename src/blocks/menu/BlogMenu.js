@@ -28,11 +28,11 @@ const BlogMenu = () => {
             <Fade in={show}>
                 <ul className="dropdown-menu" ref={blog_menu}>
                     <li>
-                        <a title="Blog" className="dropdown-item" href={ process.env.PUBLIC_URL + "/blog" }>Articles</a>
+                        <a title="Blog" aria-label="Blog" className="dropdown-item" href={ process.env.PUBLIC_URL + "/blog" }>Articles</a>
                     </li>
 
                     <li>
-                        <a title="Blog single post" className="dropdown-item" href={ process.env.PUBLIC_URL + "/blog-single-post" }>Blog single post</a>
+                        <a title="Blog single post" aria-label="Blog single post" className="dropdown-item" href={ process.env.PUBLIC_URL + "/blog-single-post" }>Blog single post</a>
                     </li>
                 </ul>
             </Fade>

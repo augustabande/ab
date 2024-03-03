@@ -24,7 +24,7 @@ const Page404 = () => {
         <Fragment>
             <MetaTags>
                 <meta charSet="UTF-8" />
-                <title>404 | Sely -  Personal Resume vCard React JS Template</title>
+                <title>404 | Augusta Bande</title>
 
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />

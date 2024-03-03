@@ -77,19 +77,19 @@ const ModalResumeMenu = (props) => {
                     :
                     (<ul className="dropdown-menu" ref={modal_resume_menu}>
                         <li>
-                            <a title="About me" className="dropdown-item" href={process.env.PUBLIC_URL + "/#about-me"}>About me</a>
+                            <a title="About me" aria-label="About me" className="dropdown-item" href={process.env.PUBLIC_URL + "/#about-me"}>About me</a>
                         </li>
 
                         <li>
-                            <a title="What I do" className="dropdown-item" href={process.env.PUBLIC_URL + "/#what-i-do"}>What I do</a>
+                            <a title="What I do" aria-label="What I do" className="dropdown-item" href={process.env.PUBLIC_URL + "/#what-i-do"}>What I do</a>
                         </li>
 
                         <li>
-                            <a title="Experience" className="dropdown-item" href={process.env.PUBLIC_URL + "/#experience"}>Experience</a>
+                            <a title="Experience" aria-label="Experience" className="dropdown-item" href={process.env.PUBLIC_URL + "/#experience"}>Experience</a>
                         </li>
 
                         <li>
-                            <a title="Education" className="dropdown-item" href={process.env.PUBLIC_URL + "/#education"}>Education</a>
+                            <a title="Education" aria-label="Education" className="dropdown-item" href={process.env.PUBLIC_URL + "/#education"}>Education</a>
                         </li>
 
 
@@ -99,15 +99,15 @@ const ModalResumeMenu = (props) => {
                         </li>
 
                         <li>
-                            <a title="Portfolio" className="dropdown-item" href={process.env.PUBLIC_URL + "/#portfolio"}>Portfolio</a>
+                            <a title="Portfolio" aria-label="Portfolio" className="dropdown-item" href={process.env.PUBLIC_URL + "/#portfolio"}>Portfolio</a>
                         </li>
 
                         <li>
-                            <a title="Services" className="dropdown-item" href={process.env.PUBLIC_URL + "/#services"}>Services</a>
+                            <a title="Services"  aria-label="Services" className="dropdown-item" href={process.env.PUBLIC_URL + "/#services"}>Services</a>
                         </li>
 
                         <li>
-                            <a title="Contact me" className="dropdown-item" href={process.env.PUBLIC_URL + "/#contact-me"}>Contact me</a>
+                            <a title="Contact me"  aria-label="Contact me" className="dropdown-item" href={process.env.PUBLIC_URL + "/#contact-me"}>Contact me</a>
                         </li>
                     </ul>)
                 }

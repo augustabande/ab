@@ -41,11 +41,11 @@ const Home = () => {
         <Fragment>
             <MetaTags>
                 <meta charSet="UTF-8" />
-                <title>Home | Digital Lab web services</title>
+                <title>Home | Augusta Bande digital web services</title>
 
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="Expert in Angular and React, UI/UX and WordPress. Elevate your digital presence with our bespoke, efficient web solutions." />
+                <meta name="description" content="Expert in Angular and React, UI/UX and WordPress. Elevate your digital presence with my bespoke, efficient web solutions." />
                 <meta name="keywords" content="" />
                 <meta name="robots" content="index, follow, noodp" />
                 <meta name="googlebot" content="index, follow" />
