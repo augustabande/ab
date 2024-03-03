@@ -9,12 +9,12 @@ const AboutMe = () => {
                         <div className="about-me-img" data-aos="zoom-in-right">
                             <div className="img object-fit">
                                 <div className="object-fit-cover">
-                                    <img src="assets/img/placeholder/02_img.jpg" alt="About" />
+                                    <img src="assets/img/placeholder/02_img.webp" alt="About" />
                                 </div>
                             </div>
 
                             <div className="img-2" data-aos="fade-up">
-                                <img src="assets/img/demo/03_img.png" alt="signed" />
+                                <img src="assets/img/demo/03_img.jpg" alt="signed" />
                             </div>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ const deletingSpeed = 50;
 const pauseDuration = 2000; // pause for 2 seconds										  
 
 const PageTitle = () => {
-    const backgrounImage = require('../../assets/img/placeholder/01_img.jpg');
+    const backgrounImage = require('../../assets/img/placeholder/01_img.webp');
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [currentWord, setCurrentWord] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
