@@ -22,7 +22,7 @@ class ContactForm extends Component {
     };
 
     submitForm = async e => {
-        e.preventDefault();
+        //e.preventDefault();
 
         if ( document.querySelector( '#alert' ) ) {
             document.querySelector( '#alert' ).remove();
@@ -30,7 +30,7 @@ class ContactForm extends Component {
 
         this.setState( { isSubmitting: true } );
 
-        axios.post( 'https://store.adveits.com/API/form.php', this.state.values, {
+        /*axios.post( 'https://store.adveits.com/API/form.php', this.state.values, {
             headers: {
                 'Access-Control-Allow-Origin': '*',
                 'Content-Type': 'application/json; charset=UTF-8'
@@ -51,7 +51,7 @@ class ContactForm extends Component {
             this.callAlert( this.state.responseMessage, response.data.status )
         } ).catch( error => {
             this.callAlert( this.state.errorMessage, 'error' )
-        } );
+        } );*/
     };
 
     removeAlert = () => {
