@@ -20,7 +20,7 @@ class ContactForm extends Component {
             delay: 5000
         };
     };
-    handleSubmit = (event) => {
+    submitForm = (event) => {
         event.preventDefault();
 
         const myForm = event.target;
@@ -135,7 +135,7 @@ class ContactForm extends Component {
                 data-netlify="true"
                 name="contact"
                 method="post"
-                onSubmit={handleSubmit}
+                onSubmit={ this.submitForm }
             >
                 <div className="form-group form-group-sm" data-aos="fade-up">
                     <input type="hidden" name="form-name" value="contact" />
