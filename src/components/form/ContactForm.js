@@ -148,7 +148,7 @@ class ContactForm extends Component {
                 data-netlify="true"
                 name="contact"
                 method="post"
-                onSubmit={ this.submitForm }
+                //onSubmit={ this.submitForm }
             >
                 <div className="form-group form-group-sm" data-aos="fade-up">
                     <input type="hidden" name="form-name" value="contact" />
