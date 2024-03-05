@@ -14,7 +14,7 @@ const AboutMe = () => {
                             </div>
 
                             <div className="img-2" data-aos="fade-up">
-                                <img src="assets/img/demo/03_img.jpg" alt="signed" />
+                                <img src="assets/img/demo/03_img.png" alt="signed" />
                             </div>
                         </div>
                     </div>
