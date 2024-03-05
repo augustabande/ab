@@ -22,45 +22,45 @@ class ContactForm extends Component {
         };
     };
     submitForm = (event) => {
-    event.preventDefault();
+        event.preventDefault();
 
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-    const searchParams = new URLSearchParams();
+        const myForm = event.target;
+        const formData = new FormData(myForm);
+        const searchParams = new URLSearchParams();
 
-    for (const pair of formData) {
-        searchParams.append(pair[0], pair[1]);
-    }
-
-    fetch("/index.html", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: searchParams.toString(),
-    })
-    .then(response => {
-        if (response.ok) {
-            // Handle the success state here, perhaps redirect or display a message
-            // If using a state variable to track submission status:
-            this.setState({ responseMessage: this.state.successMessage });
-            // Redirect to a thank-you page if necessary:
-            // navigate("/thank-you/"); // Make sure navigate is defined, e.g., via useNavigate hook from react-router-dom
-        } else {
-            // Handle warning or error states here
-            response.text().then(text => {
-                // You may want to parse the text or use it directly
-                this.setState({ responseMessage: text });
-            });
+        for (const pair of formData) {
+            searchParams.append(pair[0], pair[1]);
         }
-    })
-    .catch(error => {
-        // Handle the error here
-        alert(error);
-    })
-    .finally(() => {
-        // Perform any cleanup or final actions here, regardless of success or failure
-        this.setState({ isSubmitting: false });
-    });
-};
+
+        fetch("/thank-you#contact-me", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: searchParams.toString(),
+        })
+        .then(response => {
+            if (response.ok) {
+                // Handle the success state here, perhaps redirect or display a message
+                // If using a state variable to track submission status:
+                this.setState({ responseMessage: this.state.successMessage });
+                // Redirect to a thank-you page if necessary:
+                // navigate("/thank-you/"); // Make sure navigate is defined, e.g., via useNavigate hook from react-router-dom
+            } else {
+                // Handle warning or error states here
+                response.text().then(text => {
+                    // You may want to parse the text or use it directly
+                    this.setState({ responseMessage: text });
+                });
+            }
+        })
+        .catch(error => {
+            // Handle the error here
+            alert(error);
+        })
+        .finally(() => {
+            // Perform any cleanup or final actions here, regardless of success or failure
+            this.setState({ isSubmitting: false });
+        });
+    };
 
     /*submitForm = async e => {
         //e.preventDefault();
@@ -148,7 +148,7 @@ class ContactForm extends Component {
                 data-netlify="true"
                 name="contact"
                 method="post"
-                //onSubmit={ this.submitForm }
+                onSubmit={ this.submitForm }
             >
                 <div className="form-group form-group-sm" data-aos="fade-up">
                     <input type="hidden" name="form-name" value="contact" />

@@ -8,6 +8,7 @@ import Blog from './pages/Blog';
 import BlogSinglePost from './pages/BlogSinglePost';
 import SearchResults from './pages/SearchResults';
 import PortfolioInside from './pages/PortfolioInside';
+import ThankYou from './pages/ThankYou';
 import page404 from './pages/404';
 import UserInterface from './pages/UserInterface';
 
@@ -76,6 +77,11 @@ function App() {
                     exact
                     path={ `${ process.env.PUBLIC_URL + "/portfolio-inside" }` }
                     component={ PortfolioInside }
+                />
+                <Route
+                    exact
+                    path={ `${ process.env.PUBLIC_URL + "/thank-you" }` }
+                    component={ ThankYou }
                 />
                 <Route exact component={ page404 }/>
             </Switch>
