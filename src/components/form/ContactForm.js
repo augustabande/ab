@@ -32,7 +32,7 @@ class ContactForm extends Component {
             searchParams.append(pair[0], pair[1]);
         }
 
-        fetch("/thank-you#contact-me", {
+        fetch("/thank-you", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: searchParams.toString(),
@@ -43,12 +43,13 @@ class ContactForm extends Component {
                 // If using a state variable to track submission status:
                 this.setState({ responseMessage: this.state.successMessage });
                 // Redirect to a thank-you page if necessary:
-                // navigate("/thank-you/"); // Make sure navigate is defined, e.g., via useNavigate hook from react-router-dom
+                navigate("/thank-you"); // Make sure navigate is defined, e.g., via useNavigate hook from react-router-dom
             } else {
                 // Handle warning or error states here
                 response.text().then(text => {
                     // You may want to parse the text or use it directly
                     this.setState({ responseMessage: text });
+                    navigate("/");
                 });
             }
         })
