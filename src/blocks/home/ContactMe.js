@@ -39,7 +39,7 @@ const ContactMe = () => {
                                         <div className="contacts-information-item" data-aos="zoom-in" data-aos-delay="600">
                                             <h6 className="contacts-information-item-title">Phone no.</h6>
 
-                                            <p className="contacts-information-item-description"><a href="tel:+43253312523">+34 643 535 881</a></p>
+                                            <p className="contacts-information-item-description"><a href="tel:+34 643 535 881">+34 643 535 881</a></p>
                                         </div>
                                     </div>
                                 </div>
