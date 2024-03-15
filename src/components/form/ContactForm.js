@@ -149,10 +149,12 @@ class ContactForm extends Component {
                 data-netlify="true"
                 name="contact"
                 method="post"
+                data-netlify-honeypot="bot-field" // Add a honeypot field to prevent spam submissions
                 onSubmit={ this.submitForm }
             >
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="form-group form-group-sm" data-aos="fade-up">
-                    <input type="hidden" name="form-name" value="contact" />
+                   
                     <label htmlFor="cf-1-name" className="form-label-lg before">Name</label>
                     <input 
                         name="name" 
