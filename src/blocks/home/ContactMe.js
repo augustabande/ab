@@ -13,9 +13,9 @@ const ContactMe = () => {
                 </div>
 
                 <div className="row gutter-width-md with-pb-lg">
-                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    {/*<div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <ContactsForm />
-                    </div>
+                    </div>*/}
 
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 contact-me-img" style={{ backgroundImage: `url(${backgrounImage})` }}>
                         <div className="d-flex align-items-end h-100 spacer p-bottom-lg">

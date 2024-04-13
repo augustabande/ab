@@ -21,7 +21,7 @@ class ContactForm extends Component {
             delay: 5000
         };
     };
-    submitForm = (event) => {
+    submitForm2 = (event) => {
         event.preventDefault();
 
         const myForm = event.target;
@@ -63,7 +63,7 @@ class ContactForm extends Component {
         });
     };
 
-    /*submitForm = async e => {
+    submitForm = async e => {
         //e.preventDefault();
 
         if ( document.querySelector( '#alert' ) ) {
@@ -72,7 +72,7 @@ class ContactForm extends Component {
 
         this.setState( { isSubmitting: true } );
 
-        axios.post( 'https://store.adveits.com/API/form.php', this.state.values, {
+        axios.post( '/thank-you', this.state.values, {
             headers: {
                 'Access-Control-Allow-Origin': '*',
                 'Content-Type': 'application/json; charset=UTF-8'
@@ -94,7 +94,7 @@ class ContactForm extends Component {
         } ).catch( error => {
             this.callAlert( this.state.errorMessage, 'error' )
         } );
-    };*/
+    };
 
     removeAlert = () => {
         clearTimeout( this.state.alertTimeout );
@@ -148,7 +148,7 @@ class ContactForm extends Component {
             <form
                 data-netlify="true"
                 name="contact"
-                method="post"
+                //method="post"
                 data-netlify-honeypot="bot-field" // Add a honeypot field to prevent spam submissions
                 onSubmit={ this.submitForm }
             >

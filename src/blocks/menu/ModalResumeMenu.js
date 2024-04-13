@@ -102,9 +102,7 @@ const ModalResumeMenu = (props) => {
                             <a title="Portfolio" aria-label="Portfolio" className="dropdown-item" href={process.env.PUBLIC_URL + "/#portfolio"}>Portfolio</a>
                         </li>
 
-                        <li>
-                            <a title="Services"  aria-label="Services" className="dropdown-item" href={process.env.PUBLIC_URL + "/#services"}>Services</a>
-                        </li>
+                        
 
                         <li>
                             <a title="Contact me"  aria-label="Contact me" className="dropdown-item" href={process.env.PUBLIC_URL + "/#contact-me"}>Contact me</a>

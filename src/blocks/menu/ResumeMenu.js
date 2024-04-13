@@ -53,9 +53,7 @@ const ResumeMenu = (props) => {
                             <Link title="Portfolio" className="dropdown-item" smooth={true} duration={0} href="#portfolio" to="portfolio">Portfolio</Link>
                         </li>
 
-                        <li>
-                            <Link title="Services" className="dropdown-item" smooth={true} duration={0} href="#services" to="services">Services</Link>
-                        </li>
+                        
 
                         <li>
                             <Link title="Contact me" className="dropdown-item" smooth={true} duration={0} href="#contact-me" to="contact-me">Contact me</Link>
