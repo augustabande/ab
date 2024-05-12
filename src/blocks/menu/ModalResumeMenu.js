@@ -65,11 +65,7 @@ const ModalResumeMenu = (props) => {
                         <li>
                             <Link title="Portfolio" onClick={() => closeModal()} delay={200} className="dropdown-item" smooth={true} duration={0} href="#portfolio" to="portfolio">Portfolio</Link>
                         </li>
-
-                        <li>
-                            <Link title="Services" onClick={() => closeModal()} delay={200} className="dropdown-item" smooth={true} duration={0} href="#services" to="services">Services</Link>
-                        </li>
-
+                       
                         <li>
                             <Link title="Contact me" onClick={() => closeModal()} delay={200} className="dropdown-item" smooth={true} duration={0} href="#contact-me" to="contact-me">Contact me</Link>
                         </li>
@@ -92,8 +88,6 @@ const ModalResumeMenu = (props) => {
                             <a title="Education" aria-label="Education" className="dropdown-item" href={process.env.PUBLIC_URL + "/#education"}>Education</a>
                         </li>
 
-
-
                         <li>
                             <Link title="Skills" onClick={() => closeModal()} delay={200} className="dropdown-item" smooth={true} duration={0} href="#Skills" to="skills">Skills</Link>
                         </li>
@@ -101,8 +95,6 @@ const ModalResumeMenu = (props) => {
                         <li>
                             <a title="Portfolio" aria-label="Portfolio" className="dropdown-item" href={process.env.PUBLIC_URL + "/#portfolio"}>Portfolio</a>
                         </li>
-
-                        
 
                         <li>
                             <a title="Contact me"  aria-label="Contact me" className="dropdown-item" href={process.env.PUBLIC_URL + "/#contact-me"}>Contact me</a>

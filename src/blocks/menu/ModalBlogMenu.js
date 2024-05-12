@@ -44,7 +44,7 @@ const ModalBlogMenu = () => {
                         <a title="Blog single post" aria-label="Blog single post" className="dropdown-item" href={ process.env.PUBLIC_URL + "/blog-single-post" }>Blog single post</a>
                     </li>
                 </ul>
-            </Collapse>
+             </Collapse>
         </li>
     );
 };

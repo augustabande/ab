@@ -25,7 +25,7 @@ const BlogMenu = () => {
                 </span>
             </span>
 
-            <Fade in={show}>
+             <Fade in={show}>
                 <ul className="dropdown-menu" ref={blog_menu}>
                     <li>
                         <a title="Blog" aria-label="Blog" className="dropdown-item" href={ process.env.PUBLIC_URL + "/blog" }>Articles</a>

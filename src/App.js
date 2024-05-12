@@ -11,6 +11,7 @@ import PortfolioInside from './pages/PortfolioInside';
 import ThankYou from './pages/ThankYou';
 import page404 from './pages/404';
 import UserInterface from './pages/UserInterface';
+import CookieConsent from "react-cookie-consent";
 
 function App() {
     useEffect(() => {
@@ -47,6 +48,16 @@ function App() {
 
     return (
         <Router>
+            <CookieConsent
+                location="bottom"
+                buttonText="I understand"
+                cookieName="myAwesomeCookieName"
+                style={{ background: "#323232" }}
+                buttonStyle={{ color: "#323232", background: "#ffffff", fontSize: "13px" }}
+                expires={150}
+            >
+                This website uses only essential technical cookies to enhance your experience. No advertising profiling or statistical cookies are used.
+            </CookieConsent>
             <Switch>
                 <Route
                     exact

@@ -61,7 +61,7 @@ const MenuModal = ( props ) => {
                                 <ul className="nav">
                                     <ModalResumeMenu homePage={props.homePage} closeModal={ closeModal }/>
 
-                                    <ModalBlogMenu />
+                                    
                                 </ul>
                             </nav>
                         </div>

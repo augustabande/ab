@@ -121,6 +121,8 @@
 // #8.25 My information
 // #8.26 Social links
 // #8.27 Skills
+// #8.28 Accordion
+// #8.29 Booking
 //
 // #9 Animate
 // #9.1 Animate.css
@@ -661,6 +663,11 @@ body:not(.single)[class*='-full-width'] [class*='-section'] [class*='section-box
 // #8.28 Accordion
 =============================*/
 @import "blocks/accordion";
+
+/*=============================
+// #8.29 Booking
+=============================*/
+@import "blocks/booking";
 
 /*=================================================
 // #9 Animate

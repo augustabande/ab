@@ -17,6 +17,7 @@ import Portfolio from '../blocks/home/Portfolio';
 import ContactMe from '../blocks/home/ContactMe';
 import Skills from '../blocks/home/Skills';
 import Services from '../blocks/home/Services';
+import BookingWidget from '../blocks/home/BookingWidget';
 
 const Home = () => {
     useEffect(() => {
