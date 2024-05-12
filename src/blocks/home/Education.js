@@ -75,7 +75,7 @@ const Education = () => {
             <div className="wrapper">
                 <div className="d-flex justify-content-between">
                     <div className="title" data-aos="fade-up">
-                        <h2>Education</h2>
+                        <h2>Education and training</h2>
                     </div>
 
                     <div className="adv-education-pagination adv-swiper-pagination" data-aos="fade-up"></div>
