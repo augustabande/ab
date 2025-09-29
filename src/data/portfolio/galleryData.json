@@ -2,6 +2,19 @@
     {
         "id": 1,
         "icon": "assets/img/projects/ranking-star.png",
+        "title": "RSWALLS",
+        "category": "fullstack",
+        "link": "/portfolio-inside",
+        "imgSrc": "assets/img/projects/background-8.webp",
+        "role": "Front-end developer",
+        "picture": "assets/img/projects/web-8.jpg",
+        "url": "https://rswalls.es",
+        "technologies": "WordPress, HTML, CSS, PHP",
+        "description": "Developed a user-friendly website for a spanish construction company. Technologies used include WordPress, HTML5, CSS3, JavaScript, and PHP."
+    },
+    {
+        "id": 1,
+        "icon": "assets/img/projects/ranking-star.png",
         "title": "Quality Assessment Platform",
         "category": "frontend",
         "link": "/portfolio-inside",
