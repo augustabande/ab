@@ -1,5 +1,9 @@
 # Augusta Bande – Freelance Portfolio (React)
 
+⚠️ **Notice:** This project is no longer actively maintained.  
+It was originally developed with **React 16** and older versions of supporting libraries.  
+I keep it online as a **reference project** in my portfolio, but for new work I use **modern stacks** (React 18, Next.js, Vite, Bootstrap 5, etc.).
+
 This repository contains a **personal portfolio web application** built with **React** and deployed on **Netlify**.  
 It showcases my freelance work as a **Frontend / Full Stack Developer**, including UI development, API integration, and deployment workflows.
 
@@ -38,13 +42,17 @@ It showcases my freelance work as a **Frontend / Full Stack Developer**, includi
    cd freelance
    
 2. Install dependencies
+    ```bash
    yarn install
    
-4. Start development server
-   yarn start
+3. Start development server
+    ```bash
+    yarn start
    
-6. Build for production
-   yarn build
+4. Build for production
+    ```bash
+    yarn build
+    
 ---
 
 ## 📸 Demo
